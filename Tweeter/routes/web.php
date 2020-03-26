@@ -44,3 +44,4 @@ Route::post('/editCommentForm','feedController@editCommentForm'); //showing edit
 Route::post('/editComment','feedController@editComment'); //update comment
 Route::post('/likeTweet','feedController@addLike'); //filling the database
 Route::post('/unlikeTweet', 'feedController@deleteLike');
+Route::get('/checkUserLogin', 'userController@isUserLoggedinAPI'); //checking if user is logged in

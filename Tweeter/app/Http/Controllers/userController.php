@@ -105,5 +105,14 @@ class userController extends Controller
         $tweet->save();
         return redirect ('userProfile');
     }
+   function isUserLoggedinAPI () {
+        if (Auth::check()) {
+            $user=true;
+            return response()->json($user);
+        } else {
+            $user=false;
+            return response()->json($user);
+        }
+   }
 
 }
