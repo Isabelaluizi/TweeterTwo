@@ -1,26 +1,25 @@
 <template>
 <div>
     <div class="container">
-    <div class="row justify-content-end">
-        <div class="col-3 offset-9">
-        <a v-if="this.isLoggedin==true"  href="/home" class="btn btn-outline-success btn-small">Home</a>
-        <a v-else-if="this.isLoggedin==false"  href="/login" class="btn btn-outline-success btn-small">Login</a>
+        <div class="row justify-content-end">
+            <div class="col-3 offset-9">
+            <a v-if="this.isLoggedin==true"  href="/home" class="btn btn-outline-success btn-small">Home</a>
+            <a v-else-if="this.isLoggedin==false"  href="/login" class="btn btn-outline-success btn-small">Login</a>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-4 offset-1 px-5">
-            <img src="images/twitter-4-48.png">
+        <div class="row">
+            <div class="col-4 offset-1 px-5">
+                <img src="images/twitter-4-48.png">
+            </div>
+            <div class="col-7">
+                 <h1  id="welcome-text" class="text-title" >Tweeter</h1>
+            </div>
         </div>
-        <div class="col-7">
-             <h1  id="welcome-text" class="text-title" >Tweeter</h1>
-        </div>
-    </div>
-    <div class="divisor">
-        </div>
-     <div>
-         <br>
-         <h6 class="text-center">See what’s happening in the world right now</h6>
-
+        <div class="divisor">
+            </div>
+        <div>
+            <br>
+            <h6 class="text-center">See what’s happening in the world right now</h6>
         <div class="row">
             <div class="col text-center">
                 <br>
@@ -36,9 +35,10 @@
             <br>
         </div>
     </div>
-    <div id="change-background">
-        <img src="images/people.png" class= "rounded mx-auto d-block" width=60% id="img-people">
-    </div>
+        <div id="change-background">
+            <img data-aos="flip-left" src="images/people.png" class= "rounded mx-auto d-block" width=60% id="img-people">
+        </div>
+
 </div>
 </template>
 
@@ -47,8 +47,7 @@
         name:'Root',
         data() {
             return {
-                isLoggedin: this.checkUserLogin(),
-                controller: new ScrollMagic.Controller()
+                isLoggedin: this.checkUserLogin()
             }
         },
         methods: {

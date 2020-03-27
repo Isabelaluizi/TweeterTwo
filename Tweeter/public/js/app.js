@@ -1956,8 +1956,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'Root',
   data: function data() {
     return {
-      isLoggedin: this.checkUserLogin(),
-      controller: new ScrollMagic.Controller()
+      isLoggedin: this.checkUserLogin()
     };
   },
   methods: {
@@ -38107,7 +38106,12 @@ var staticRenderFns = [
     return _c("div", { attrs: { id: "change-background" } }, [
       _c("img", {
         staticClass: "rounded mx-auto d-block",
-        attrs: { src: "images/people.png", width: "60%", id: "img-people" }
+        attrs: {
+          "data-aos": "flip-left",
+          src: "images/people.png",
+          width: "60%",
+          id: "img-people"
+        }
       })
     ])
   }
