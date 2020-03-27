@@ -1939,11 +1939,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Root',
   data: function data() {
     return {
-      isLoggedin: this.checkUserLogin()
+      isLoggedin: this.checkUserLogin(),
+      controller: new ScrollMagic.Controller()
     };
   },
   methods: {
@@ -1958,7 +1972,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log('');
   }
 });
 
@@ -6507,7 +6521,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container[data-v-cca49266] {\n    margin-top:2vh;\n}\n.link-color[data-v-cca49266] {\n\n    color:#a6d785;\n}\n.text-link-color[data-v-cca49266] {\n    color: #1b5e20;\n}\n#welcome-text[data-v-cca49266] {\n    font-family: Cookie;\n}\n\n", ""]);
+exports.push([module.i, "\n.container[data-v-cca49266] {\n    margin-top:2vh;\n}\n#welcome-text[data-v-cca49266] {\n    font-family: Cookie;\n}\n.text-title[data-v-cca49266] {\n    color:#1b5e20;\n}\n.divisor[data-v-cca49266]{\n  border: 1px solid #1b5e20;\n    margin-top: 1vh;\n}\n#change-background[data-v-cca49266] {\n    background-color: #e8f5e9;\n    height:50vh;\n}\n#img-people[data-v-cca49266]{\n    padding-top:3vh;\n}\n#reveal1[data-v-cca49266] {\n\t\topacity: 0;\n\t\t-webkit-transform: scale(0.9);\n\t\t\t\t\t\ttransform: scale(0.9);\n\t\t-webkit-transition: all 1s ease-in-out;\n\t\t\t\t\t\ttransition: all 1s ease-in-out;\n}\n#reveal1.visible[data-v-cca49266] {\n\t\topacity: 1;\n\t\t-webkit-transform: none;\n\t\t\t\t\t\ttransform: none;\n}\n", ""]);
 
 // exports
 
@@ -37979,30 +37993,42 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row" }, [
+  return _c("div", [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row justify-content-end" }, [
+        _c("div", { staticClass: "col-3 offset-9" }, [
+          this.isLoggedin == true
+            ? _c(
+                "a",
+                {
+                  staticClass: "btn btn-outline-success btn-small",
+                  attrs: { href: "/home" }
+                },
+                [_vm._v("Home")]
+              )
+            : this.isLoggedin == false
+            ? _c(
+                "a",
+                {
+                  staticClass: "btn btn-outline-success btn-small",
+                  attrs: { href: "/login" }
+                },
+                [_vm._v("Login")]
+              )
+            : _vm._e()
+        ])
+      ]),
+      _vm._v(" "),
       _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "divisor" }),
       _vm._v(" "),
       _vm._m(1),
       _vm._v(" "),
-      _c("div", { staticClass: "col-2 py-6 px-0" }, [
-        this.isLoggedin == true
-          ? _c("a", { staticClass: "link-color", attrs: { href: "/home" } }, [
-              _c("h6", { staticClass: "text-link-color" }, [_vm._v("Home")])
-            ])
-          : this.isLoggedin == false
-          ? _c("a", { staticClass: "link-color", attrs: { href: "/login" } }, [
-              _c("h6", { staticClass: "text-link-color" }, [_vm._v("Login")])
-            ])
-          : _vm._e()
-      ])
+      _vm._m(2)
     ]),
     _vm._v(" "),
-    _vm._m(2),
-    _vm._v(" "),
-    _vm._m(3),
-    _vm._v(" "),
-    _c("h5", [_vm._v("See what’s happening in the world right now")])
+    _vm._m(3)
   ])
 }
 var staticRenderFns = [
@@ -38010,20 +38036,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-4 py-2 px-5" }, [
-      _c("img", { attrs: { src: "images/twitter-4-48.png" } })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-6 py-3 px-4" }, [
-      _c(
-        "h1",
-        { staticClass: "text-link-color", attrs: { id: "welcome-text" } },
-        [_vm._v("Tweeter")]
-      )
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-4 offset-1 px-5" }, [
+        _c("img", { attrs: { src: "images/twitter-4-48.png" } })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-7" }, [
+        _c("h1", { staticClass: "text-title", attrs: { id: "welcome-text" } }, [
+          _vm._v("Tweeter")
+        ])
+      ])
     ])
   },
   function() {
@@ -38031,19 +38053,36 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
+      _c("br"),
+      _vm._v(" "),
       _c("h6", { staticClass: "text-center" }, [
-        _vm._v(
-          "Be connected with family, friends and celebrities, keep up with the news or boost your business."
-        )
+        _vm._v("See what’s happening in the world right now")
       ]),
       _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "link-color text-center", attrs: { href: "/register" } },
-        [_c("h4", { staticClass: "text-link-color" }, [_vm._v("Start Now")])]
-      ),
-      _vm._v(" "),
-      _c("br")
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col text-center" }, [
+          _c("br"),
+          _vm._v(" "),
+          _c("h6", { staticClass: "text-center" }, [
+            _c("i", [
+              _vm._v(
+                "Be connected with family, friends and celebrities, keep up with the news or boost your business."
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-success text-center btn-large",
+              attrs: { href: "/register" }
+            },
+            [_c("h5", [_vm._v("Start Now")])]
+          )
+        ])
+      ])
     ])
   },
   function() {
@@ -38054,6 +38093,21 @@ var staticRenderFns = [
       _c("img", {
         staticClass: "rounded mx-auto d-block",
         attrs: { src: "images/bird.jpg", width: "80%" }
+      }),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("br")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "change-background" } }, [
+      _c("img", {
+        staticClass: "rounded mx-auto d-block",
+        attrs: { src: "images/people.png", width: "60%", id: "img-people" }
       })
     ])
   }
