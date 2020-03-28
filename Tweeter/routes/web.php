@@ -42,6 +42,6 @@ Route::post('/confirmDeleteComment','feedController@confirmDeleteComment'); //Is
 Route::post('deleteComment', 'feedController@deleteComment'); //is deleting a comment
 Route::post('/editCommentForm','feedController@editCommentForm'); //showing edit form
 Route::post('/editComment','feedController@editComment'); //update comment
-Route::post('/likeTweet','feedController@addLike'); //filling the database
-Route::post('/unlikeTweet', 'feedController@deleteLike');
+//Route::post('/likeTweet','feedController@addLike'); //filling the database
+//Route::post('/unlikeTweet', 'feedController@deleteLike');
 Route::get('/checkUserLogin', 'userController@isUserLoggedinAPI'); //checking if user is logged in

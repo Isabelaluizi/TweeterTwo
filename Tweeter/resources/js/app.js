@@ -20,7 +20,13 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('Root', require('./components/Root.vue').default);
+//Vue.component('Root', require('./components/Root.vue').default);
+//Vue.component('ButtonLike', require('./components/ButtonLike.vue').default);
+//Vue.component('myExample', require('./components/New.vue').default);
+
+import Main from './components/Main.vue'
+import ButtonLike from './components/ButtonLike.vue'
+import myExample from './components/New.vue'
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,4 +36,9 @@ Vue.component('Root', require('./components/Root.vue').default);
 
 const app = new Vue({
     el: '#app',
+    components: {
+        Main,
+        ButtonLike,
+        myExample
+    }
 });

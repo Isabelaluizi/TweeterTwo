@@ -3,8 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Tweeter, connect, people, friends, celebrity, spread, opinions, news, business">
+        <meta name="description" content="A social media to be connected with friends, family and celebrities, keep up with the news and boost business">
+        <meta name="author" content="Luiz">
+        <link rel="icon" href="images/tweeterSEO.png" type="image/gif" sizes="16x16">
+        <title>Tweeter</title>
 
-        <title>Laravel</title>
 
         <!-- Fonts -->
         <script src="https://kit.fontawesome.com/23224187c2.js" crossorigin="anonymous"></script>
@@ -19,7 +23,7 @@
     </head>
     <body>
         <div id="app">
-            <Root />
+            <Main />
         </div>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>

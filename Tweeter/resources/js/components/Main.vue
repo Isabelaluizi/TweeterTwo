@@ -2,19 +2,21 @@
 <div>
     <Header />
     <Body />
+    <Footer />
 </div>
 </template>
 
 <script>
 import Header from './Header'
 import Body from './Body'
+import Footer from './Footer'
 
     export default {
-        name:'Root',
+        name:'Main',
         components: {
             Header,
             Body,
-            //Footer
+            Footer
         },
         mounted() {
             console.log('');

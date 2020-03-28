@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@php
+ {{-- @php
     function checkLike ($tweetId, $checkLikes) {
         foreach ($checkLikes as $checkLike) {
             if ($checkLike->user_id==Auth::user()->id && $checkLike->tweet_id==$tweetId) {
@@ -9,7 +9,7 @@
         }
         return false;
     }
-@endphp
+@endphp --}}
 
 @section ('content')
 
@@ -21,7 +21,7 @@
     <br>
 <div class="divider"></div>
 <br>
-
+<myExample></myExample>
  @foreach ($tweetsInfo as $tweetInfo)
             @php
             $date=$tweetInfo['created_at'];
@@ -64,25 +64,26 @@
                             <button class="waves-effect waves-teal btn-flat green-text text-dark " type="submit" name="tweetId" value={{$tweetInfo['tweetId']}}><i class="material-icons green-text text-lighten-1 left">mode_comment</i>{{$tweetInfo['numComments']}}</button>
                             </form>
                         </div>
-                            @if(checkLike($tweetInfo['tweetId'],$checkLikes))
-                            <form class="right-align" action="/unlikeTweet" method="post">
-                                @csrf
-                            <button  class="waves-effect waves-teal btn-flat" type="submit" name="tweetId" value={{$tweetInfo['tweetId']}}><i class="material-icons pink-text text-lighten-3">favorite</i></button>
-                            <span class="pink-text text-lighten-3">{{$tweetInfo['numLikes']}}</span>
-                            </form>
+                            {{-- @if(checkLike($tweetInfo['tweetId'],$checkLikes)) --}}
+                            <div class="right-align">
+                                {{-- @csrf --}}
+                                <ButtonLike />
+                            {{-- <button  class="waves-effect waves-teal btn-flat" type="submit" name="tweetId" value={{$tweetInfo['tweetId']}}><i class="material-icons pink-text text-lighten-3">favorite</i></button>
+                            <span class="pink-text text-lighten-3">{{$tweetInfo['numLikes']}}</span> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
-                            @else
-                            <form  class="right-align" action="/likeTweet" method="post">
+                            {{-- @else
+                            <div  class="right-align" action="/likeTweet" method="post">
                             @csrf
                             <button class="waves-effect waves-teal btn-flat" type="submit" name="tweetId" value={{$tweetInfo['tweetId']}}><i class="material-icons pink-text text-lighten-3">favorite_border</i></button>
                             <span class="pink-text text-lighten-3">{{$tweetInfo['numLikes']}}</span>
-                            </form>
+                            </div>
                     </div>
                 </div>
-            </div>
-                            @endif
+            </div> --}}
+                            {{-- @endif --}}
 
 
 
