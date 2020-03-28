@@ -4,6 +4,12 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {});
+  });
+
+
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -24,9 +30,9 @@ window.Vue = require('vue');
 //Vue.component('ButtonLike', require('./components/ButtonLike.vue').default);
 //Vue.component('myExample', require('./components/New.vue').default);
 
-import Main from './components/Main.vue'
-import ButtonLike from './components/ButtonLike.vue'
-import myExample from './components/New.vue'
+import Root from './components/Root.vue'
+import Like from './components/ButtonLike.vue'
+//import myExample from './components/New.vue'
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -37,8 +43,7 @@ import myExample from './components/New.vue'
 const app = new Vue({
     el: '#app',
     components: {
-        Main,
-        ButtonLike,
-        myExample
+        Root,
+        Like
     }
 });

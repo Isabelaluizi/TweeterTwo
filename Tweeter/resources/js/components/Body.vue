@@ -15,7 +15,7 @@
             <img src="images/bird.jpg" class="rounded mx-auto d-block animated pulse infinite" width=80%>
             <br>
             <br>
-        </div>
+            </div>
         </div>
     </div>
     <div id="change-background">

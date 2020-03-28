@@ -21,7 +21,7 @@
     <br>
 <div class="divider"></div>
 <br>
-<myExample></myExample>
+
  @foreach ($tweetsInfo as $tweetInfo)
             @php
             $date=$tweetInfo['created_at'];
@@ -67,7 +67,7 @@
                             {{-- @if(checkLike($tweetInfo['tweetId'],$checkLikes)) --}}
                             <div class="right-align">
                                 {{-- @csrf --}}
-                                <ButtonLike />
+                                <Like />
                             {{-- <button  class="waves-effect waves-teal btn-flat" type="submit" name="tweetId" value={{$tweetInfo['tweetId']}}><i class="material-icons pink-text text-lighten-3">favorite</i></button>
                             <span class="pink-text text-lighten-3">{{$tweetInfo['numLikes']}}</span> --}}
                             </div>
