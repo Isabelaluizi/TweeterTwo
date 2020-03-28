@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Fonts -->
@@ -30,8 +30,7 @@
     </style>
 </head>
 <body>
-    <div id="app">
-
+    <div>
         <nav class="nav-extended green lighten-5">
             <div class="nav-wrapper">
                 <a class="green-text text-darken-4" href="#" class="brand-logo"><img src="{{url('/images/twitter-4-48.png')}}"><strong>Tweeter</strong></a>
