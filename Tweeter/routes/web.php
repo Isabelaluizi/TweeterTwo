@@ -45,3 +45,5 @@ Route::post('/editComment','feedController@editComment'); //update comment
 //Route::post('/likeTweet','feedController@addLike'); //filling the database
 //Route::post('/unlikeTweet', 'feedController@deleteLike');
 Route::get('/checkUserLogin', 'userController@isUserLoggedinAPI'); //checking if user is logged in
+Route::post('/APIcheckLike','feedController@checkUserLiked'); //check if tweet has already been liked
+Route::post('/checkUserLiked','feedController@addLike'); //adding or deleting like

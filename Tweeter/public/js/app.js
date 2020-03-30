@@ -2023,8 +2023,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Like'
+  name: 'Like',
+  props: ['tweet'],
+  data: function data() {
+    return {
+      userLiked: this.checkLike(),
+      count: this.tweet.numLikes
+    };
+  },
+  methods: {
+    checkLike: function checkLike() {
+      var _this = this;
+
+      axios.post('/APIcheckLike', this.tweet).then(function (response) {
+        _this.userLiked = response.data;
+      })["catch"](function (error) {
+        console.log("Error checking user");
+      });
+    },
+    updateLike: function updateLike() {
+      var _this2 = this;
+
+      axios.post('/checkUserLiked', this.tweet).then(function (response) {
+        _this2.userLiked = response.data;
+
+        if (_this2.userLiked == true) {
+          _this2.count++;
+        } else {
+          _this2.count--;
+        }
+      })["catch"](function (error) {
+        _this2.userLiked = "Error checking user";
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -38570,28 +38604,37 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("button", { staticClass: "waves-effect waves-teal btn-flat" }, [
-        _c("i", { staticClass: "material-icons pink-text text-lighten-3" }, [
-          _vm._v("favorite")
-        ])
-      ]),
+  return _c(
+    "div",
+    {
+      on: {
+        click: function($event) {
+          return _vm.updateLike()
+        }
+      }
+    },
+    [
+      this.userLiked == false
+        ? _c("p", { staticClass: " btn-flat" }, [
+            _c(
+              "i",
+              { staticClass: "material-icons pink-text text-lighten-3" },
+              [_vm._v("favorite_border")]
+            )
+          ])
+        : _c("p", { staticClass: " btn-flat" }, [
+            _c(
+              "i",
+              { staticClass: "material-icons pink-text text-lighten-3" },
+              [_vm._v("favorite")]
+            )
+          ]),
       _vm._v(" "),
-      _c("button", { staticClass: "waves-effect waves-teal btn-flat" }, [
-        _c("i", { staticClass: "material-icons pink-text text-lighten-3" }, [
-          _vm._v("favorite_border")
-        ])
-      ])
-    ])
-  }
-]
+      _c("span", { staticClass: "pink-text" }, [_vm._v(_vm._s(this.count))])
+    ]
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

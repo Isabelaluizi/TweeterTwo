@@ -97,20 +97,42 @@ class feedController extends Controller
             return redirect ("/readTweets/$request->tweetId");
     }
     function addLike (Request $request) {
-        $like = new \App\Like;
-        $like->user_id = Auth::user()->id;
-        $like->tweet_id = $request->tweetId;
-        $like->save();
-        return redirect ('readTweets');
-    }
-    function deleteLike (Request $request) {
-        $likes=\App\Like::where('user_id',Auth::user()->id)->where('tweet_id',$request->tweetId)->get();
-        foreach($likes as $like) {
-            \App\Like::destroy($like
-            ->id);
+        $tweetsLiked=\App\Like::where('tweet_id',"$request->tweetId")->where('user_id',Auth::user()->id)->get();
+        if(sizeOf($tweetsLiked) == 0) {
+            $like = new \App\Like;
+            $like->user_id = Auth::user()->id;
+            $like->tweet_id = $request->tweetId;
+            $like->save();
+            $liked=true;
+        } else {
+            foreach($tweetsLiked as $tweetLiked) {
+            \App\Like::destroy($tweetLiked->id);
+            }
+            $liked=false;
         }
-        return redirect ('readTweets');
+        return response()->json($liked);
     }
+    function checkUserLiked (Request $request) {
+        $tweetsLiked=\App\Like::where('tweet_id',"$request->tweetId")->where('user_id',Auth::user()->id)->get();
+        if(sizeOf($tweetsLiked) == 0) {
+            $alreadyliked=false;
+        } else {
+            $alreadyliked=true;
+        }
+        return response()->json($alreadyliked);
+    }
+
+
+
+
+    // function deleteLike (Request $request) {
+    //     $likes=\App\Like::where('user_id',Auth::user()->id)->where('tweet_id',$request->tweetId)->get();
+    //     foreach($likes as $like) {
+    //         \App\Like::destroy($like
+    //         ->id);
+    //     }
+    //     return redirect ('readTweets');
+    // }
 
 
 }
