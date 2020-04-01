@@ -26,12 +26,13 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-//Vue.component('Root', require('./components/Root.vue').default);
-//Vue.component('ButtonLike', require('./components/ButtonLike.vue').default);
+Vue.component('Root', require('./components/Root.vue').default);
+Vue.component('Like', require('./components/ButtonLike.vue').default);
+//Vue.component('InfiniteLoading',require('vue-infinite-loading'));
 //Vue.component('myExample', require('./components/New.vue').default);
 
-import Root from './components/Root.vue'
-import Like from './components/ButtonLike.vue'
+//import Root from './components/Root.vue'
+//import Like from './components/ButtonLike.vue'
 //import myExample from './components/New.vue'
 
 /**
@@ -42,8 +43,8 @@ import Like from './components/ButtonLike.vue'
 
 const app = new Vue({
     el: '#app',
-    components: {
-        Root,
-        Like
-    }
+    // components: {
+    //     Root,
+    //     Like
+    // }
 });

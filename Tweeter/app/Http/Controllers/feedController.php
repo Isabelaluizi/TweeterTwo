@@ -11,7 +11,7 @@ class feedController extends Controller
 {
     function showTweets () {
         if (Auth::check()) {
-        $tweets= \App\Tweet::orderBy("created_at", "desc")->get();
+        $tweets= \App\Tweet::orderBy("created_at", "desc")->paginate(10);
         $checkLikes =\App\Like::all();
             $tweetInfo=[];
             foreach($tweets as $tweet) {
@@ -30,7 +30,7 @@ class feedController extends Controller
                     "numComments" => "$numComments"
                 ]);
             }
-            return view('readTweets', ['tweetsInfo'=>$tweetInfo],['checkLikes'=>$checkLikes]);
+            return view('readTweets', ['tweets' =>$tweets], ['tweetsInfo'=>$tweetInfo],['checkLikes'=>$checkLikes]);
          } else {
             return redirect('home');
          }

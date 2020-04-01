@@ -9,7 +9,7 @@
     </div>
     <div class="row">
         <div class="col-4 offset-1 px-5">
-            <img src="images/twitter-4-48.png">
+            <img src="images/twitter-4-48.png" alt="tweeter">
         </div>
         <div class="col-7">
              <h1 class="text-title" >Tweeter</h1>

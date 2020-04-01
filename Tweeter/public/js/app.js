@@ -38338,7 +38338,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("img", {
               staticClass: "rounded mx-auto d-block animated pulse infinite",
-              attrs: { src: "images/bird.jpg", width: "80%" }
+              attrs: { src: "images/bird.jpg", alt: "bird", width: "80%" }
             }),
             _vm._v(" "),
             _c("br"),
@@ -38361,6 +38361,7 @@ var staticRenderFns = [
                 attrs: {
                   "data-aos": "flip-left",
                   src: "images/people.png",
+                  alt: "people",
                   width: "60%",
                   id: "img-people"
                 }
@@ -38425,6 +38426,7 @@ var staticRenderFns = [
                 attrs: {
                   "data-aos": "flip-left",
                   src: "images/Business.png",
+                  alt: "Business",
                   width: "60%",
                   id: "img-people"
                 }
@@ -38474,6 +38476,7 @@ var staticRenderFns = [
                 attrs: {
                   "data-aos": "flip-left",
                   src: "images/news.jpg",
+                  alt: "news",
                   width: "60%",
                   id: "img-people"
                 }
@@ -38732,7 +38735,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-4 offset-1 px-5" }, [
-        _c("img", { attrs: { src: "images/twitter-4-48.png" } })
+        _c("img", { attrs: { src: "images/twitter-4-48.png", alt: "tweeter" } })
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-7" }, [
@@ -50936,13 +50939,9 @@ module.exports = function(module) {
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_Root_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Root.vue */ "./resources/js/components/Root.vue");
-/* harmony import */ var _components_ButtonLike_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ButtonLike.vue */ "./resources/js/components/ButtonLike.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -50965,12 +50964,13 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  */
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-//Vue.component('Root', require('./components/Root.vue').default);
-//Vue.component('ButtonLike', require('./components/ButtonLike.vue').default);
+
+Vue.component('Root', __webpack_require__(/*! ./components/Root.vue */ "./resources/js/components/Root.vue")["default"]);
+Vue.component('Like', __webpack_require__(/*! ./components/ButtonLike.vue */ "./resources/js/components/ButtonLike.vue")["default"]); //Vue.component('InfiniteLoading',require('vue-infinite-loading'));
 //Vue.component('myExample', require('./components/New.vue').default);
-
-
- //import myExample from './components/New.vue'
+//import Root from './components/Root.vue'
+//import Like from './components/ButtonLike.vue'
+//import myExample from './components/New.vue'
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -50979,11 +50979,11 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  */
 
 var app = new Vue({
-  el: '#app',
-  components: {
-    Root: _components_Root_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Like: _components_ButtonLike_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }
+  el: '#app' // components: {
+  //     Root,
+  //     Like
+  // }
+
 });
 
 /***/ }),

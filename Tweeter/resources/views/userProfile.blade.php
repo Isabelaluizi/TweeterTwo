@@ -18,8 +18,6 @@
             <div class="col s12">
                 <h6 class="center-align"><i class="material-icons center">date_range</i><strong>Joined</strong> {{Auth::user()->created_at->format('Y-m-d')}}</h6>
             </div>
-            <div class="col s12 center-align"> <p class="green-text text-dark-4" > Following:{{count($following)}} </p>
-            </div>
         </div>
 
         <div class="row">
@@ -109,6 +107,8 @@
         </div>
     @endif
     @endforeach
+    {{ $tweets->links() }}
     </div>
+
 
 @endsection

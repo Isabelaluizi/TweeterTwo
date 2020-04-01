@@ -12,7 +12,7 @@
             </div>
             <div class="col-xl order-xl-1">
             <br>
-            <img src="images/bird.jpg" class="rounded mx-auto d-block animated pulse infinite" width=80%>
+            <img src="images/bird.jpg" alt="bird" class="rounded mx-auto d-block animated pulse infinite" width=80%>
             <br>
             <br>
             </div>
@@ -23,7 +23,7 @@
             <h1 class="text-title text-center">Why Tweeter?</h1>
             <div class="row row-cols-xl-3">
                 <div class="col-xl order-xl-1">
-                    <img data-aos="flip-left" src="images/people.png" class= "rounded mx-auto d-block" width=60% id="img-people">
+                    <img data-aos="flip-left" src="images/people.png" alt="people" class= "rounded mx-auto d-block" width=60% id="img-people">
                 </div>
                 <div class="col-xl order-xl-4">
                     <br>
@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <div class="col-xl order-xl-2">
-                    <img data-aos="flip-left" src="images/Business.png" class= "rounded mx-auto d-block" width=60% id="img-people">
+                    <img data-aos="flip-left" src="images/Business.png" alt="Business" class= "rounded mx-auto d-block" width=60% id="img-people">
                 </div>
                 <div class="col-xl order-xl-5">
                     <br>
@@ -52,7 +52,7 @@
                     </ul>
                 </div>
                 <div class="col-xl order-xl-3">
-                    <img data-aos="flip-left" src="images/news.jpg" class= "rounded mx-auto d-block" width=60% id="img-people">
+                    <img data-aos="flip-left" src="images/news.jpg"  alt="news" width=60% id="img-people" class="rounded mx-auto d-block">
                 </div>
                 <div class="col-xl order-xl-6">
                     <ul class="fa-ul">

@@ -91,4 +91,6 @@
 
 @endforeach
             </div>
- @endsection
+            {{ $tweets->links() }}
+
+            @endsection

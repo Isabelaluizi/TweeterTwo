@@ -27,6 +27,11 @@
         background-color: rgb(183, 225, 157);
         width:50%;
         }
+        .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
     </style>
 </head>
 <body>
