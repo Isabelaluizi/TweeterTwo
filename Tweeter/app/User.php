@@ -22,6 +22,10 @@ class User extends Authenticatable
         return $this->hasMany('App\Comment','user_id','id');
     }
 
+    public function gifcomments() {
+        return $this->hasMany('App\Gifcomment','user_id','id');
+    }
+
     public function likes() {
         return $this->hasMany('App\Like','user_id','id');
     }

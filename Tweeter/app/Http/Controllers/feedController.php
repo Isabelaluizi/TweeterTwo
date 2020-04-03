@@ -121,6 +121,14 @@ class feedController extends Controller
         }
         return response()->json($alreadyliked);
     }
+    function addGifComment (Request $request) {
+        $gifComment = new \App\Gifcomment;
+        $gifComment->user_id = Auth::user()->id;
+        $gifComment->tweet_id = $request->tweetId;
+        $gifComment->url = $request->url;
+        $gifComment->save();
+        error_log($gifComment);
+    }
 
 
 

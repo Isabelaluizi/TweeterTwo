@@ -1,7 +1,7 @@
 <template>
 <div>
     <Searchgif />
-    <Choosegif />
+    <Choosegif :tweetId= tweet.id />
 </div>
 </template>
 

@@ -22,7 +22,7 @@
                 <div class="col s12 center-align">
                     <button class="waves-effect waves-light btn green lighten-1" type="submit" name= "tweetId" value={{$tweet->id}}>Reply</button>
                 </div>
-                <Giphy />
+            <Giphy :tweet="{{ $tweet }}" />
             </div>
             </form>
 
