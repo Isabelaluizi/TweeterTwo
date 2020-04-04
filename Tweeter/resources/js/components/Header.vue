@@ -12,7 +12,7 @@
             <img src="images/twitter-4-48.png" alt="tweeter">
         </div>
         <div class="col-7">
-             <h1 class="text-title" >Tweeter</h1>
+             <h1 class="text-title">Tweeter</h1>
         </div>
     </div>
     <div class="divisor">

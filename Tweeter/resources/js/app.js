@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Sidenav.init(elems, {});
   });
 
-
 require('./bootstrap');
 
 window.Vue = require('vue');

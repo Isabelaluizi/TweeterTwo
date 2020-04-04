@@ -58,7 +58,7 @@
                                 @include('partialeditForm')
                             </div>
                                 @endif
-                                <div class="col s3">
+                                <div class="col s3 center-align">
                             <form class="center-align" action="/commentForm" method="post">
                                 @csrf
                             <button class="waves-effect waves-teal btn-flat green-text text-dark " type="submit" name="tweetId" value={{$tweetInfo['tweetId']}}><i class="material-icons green-text text-lighten-1 left">mode_comment</i>{{$tweetInfo['numComments']}}</button>

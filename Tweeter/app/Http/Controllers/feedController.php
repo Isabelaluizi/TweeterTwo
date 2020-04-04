@@ -17,8 +17,9 @@ class feedController extends Controller
             foreach($tweets as $tweet) {
                 $likes=\App\Like::where("tweet_id","$tweet->id")->get();
                 $comments=\App\Comment::where("tweet_id","$tweet->id")->get();
+                $gifcomments=\App\Comment::where("tweet_id","$tweet->id")->get();
                 $numLikes=count($likes);
-                $numComments=count($comments);
+                $numComments=count($comments)+ count($gifcomments);
                 $userId=$tweet->user_id;
                 array_push ($tweetInfo,[
                     "userId"=> "$userId",
@@ -57,6 +58,7 @@ class feedController extends Controller
             abort(403, 'Page not found');
         }else {
         $comments= \App\Comment::where('tweet_id',"$tweetId")->orderBy("created_at", "desc")->get();
+        $gifcomments= \App\Gifcomment::where('tweet_id',"$tweetId")->orderBy("created_at", "desc")->get();
         $tweetInfo = [
             "userId"=> "$tweet->user_id",
             "tweetId"=> "$tweet->id",
@@ -66,12 +68,30 @@ class feedController extends Controller
         ];
         $commentsInfo=[];
         foreach($comments as $comment) {
+            foreach($gifcomments as $gifcomment) {
+                if($gifcomment->created_at >= $comment->created_at) {
+                array_push ($commentsInfo, [
+                    "commentId" => "$gifcomment->id",
+                    "commentuserId" => "$gifcomment->user_id",
+                    "name" => \App\User::find($gifcomment->user_id)->name,
+                    "comment" => null,
+                    "commenturl" => "$gifcomment->url",
+                    "created_at" => "$gifcomment->created_at"]);
+                    unset($gifcomment->id);
+                    unset($gifcomment->user_id);
+                    unset($gifcomment->tweet_id);
+                    unset($gifcomment->url);
+                    unset($gifcomment->created_at);
+                    unset($gifcomment->updated_at);
+                }
+            }
             array_push ($commentsInfo, [
-            "commentId" => "$comment->id",
-            "commentuserId" => "$comment->user_id",
-            "name" => \App\User::find($comment->user_id)->name,
-            "comment" => "$comment->content",
-            "created_at" => "$comment->created_at"]);
+                "commentId" => "$comment->id",
+                "commentuserId" => "$comment->user_id",
+                "name" => \App\User::find($comment->user_id)->name,
+                "comment" => "$comment->content",
+                "commenturl" => null,
+                "created_at" => "$comment->created_at"]);
         }
     }
         return view ('showTweetInfo', ['tweetInfo'=>$tweetInfo], ['commentsInfo'=>$commentsInfo]);
@@ -79,11 +99,20 @@ class feedController extends Controller
     function confirmDeleteComment (Request $request) {
         return view('confirmDeleteComment', ['ids'=>$request]);
     }
+    function confirmDeleteGif (Request $request) {
+        return view ('confirmDeleteGif',  ['ids'=>$request]);
+    }
     function deleteComment (Request $request) {
         if($request->option=="yes") {
         \App\Comment::destroy($request->commentId);
         }
         return redirect ("/readTweets/$request->tweetId");
+    }
+    function deleteCommentGif (Request $request) {
+        if($request->option=="yes") {
+            \App\Gifcomment::destroy($request->commentIdGif);
+            }
+            return redirect ("/readTweets/$request->tweetId");
     }
     function editCommentForm (Request $request) {
         $comment=\App\Comment::find($request->commentId);
@@ -127,7 +156,7 @@ class feedController extends Controller
         $gifComment->tweet_id = $request->tweetId;
         $gifComment->url = $request->url;
         $gifComment->save();
-        error_log($gifComment);
+        return response()->json("readTweets/$request->tweetId");
     }
 
 

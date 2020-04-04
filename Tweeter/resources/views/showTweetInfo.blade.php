@@ -40,6 +40,7 @@
     </div>
     <br>
     <div class="divider"></div>
+
     @if ($commentsInfo != NULL)
         @foreach ($commentsInfo as $commentInfo)
             @php
@@ -64,21 +65,35 @@
                 <p>{{$date}}</p>
             </div>
             <div class="col s12 center-align">
-            <p>{{$commentInfo['comment']}}</p>
+                @if ($commentInfo['commenturl'] == null)
+                <p>{{$commentInfo['comment']}}</p>
+                @else
+                <img src="{{$commentInfo['commenturl']}}" width="50%">
+                @endif
             </div>
-            <div class="col s6 center-align">
-            <form action="/confirmDeleteComment" method="post">
+                @if ($commentInfo['commenturl'] == null)
+                <div class="col s6 center-align">
+                <form action="/confirmDeleteComment" method="post">
+                    @csrf
+                    <button class="waves-effect waves-teal btn-flat green-text text-dark" type="submit" name="commentId" value={{$commentInfo['commentId']}}><i class="material-icons green-text text-lighten-1 left">delete</i>Delete</button>
+                    <input type="hidden" name="tweetId" value={{$tweetInfo['tweetId']}}>
+                </form>
+                </div>
+                <div class="col s6 center-align">
+                <form action="/editCommentForm" method="post">
+                    @csrf
+                    <button type="submit" name="commentId" class="waves-effect waves-teal btn-flat green-text text-dark" value={{$commentInfo['commentId']}}><i class="material-icons green-text text-lighten-1 left">edit</i>Edit</button>
+                </form>
+        </div>
+            @else
+            <div class="col s12 center-align">
+            <form action="/confirmDeleteGif" method="post">
                 @csrf
-                <button class="waves-effect waves-teal btn-flat green-text text-dark" type="submit" name="commentId" value={{$commentInfo['commentId']}}><i class="material-icons green-text text-lighten-1 left">delete</i>Delete</button>
+                <button class="waves-effect waves-teal btn-flat green-text text-dark" type="submit" name="commentIdGif" value={{$commentInfo['commentId']}}><i class="material-icons green-text text-lighten-1 left">delete</i>Delete</button>
                 <input type="hidden" name="tweetId" value={{$tweetInfo['tweetId']}}>
             </form>
-        </div>
-        <div class="col s6 center-align">
-            <form action="/editCommentForm" method="post">
-                @csrf
-                <button type="submit" name="commentId" class="waves-effect waves-teal btn-flat green-text text-dark" value={{$commentInfo['commentId']}}><i class="material-icons green-text text-lighten-1 left">edit</i>Edit</button>
-            </form>
-        </div>
+            </div>
+            @endif
     </div>
             @else
             <div class="row center-align">
@@ -94,7 +109,11 @@
                 <p>{{$date}}</p>
                 </div>
                 <div class="col s12 center-align">
-                <p>{{$commentInfo['comment']}}</p>
+                    @if ($commentInfo['commenturl'] == null)
+                    <p>{{$commentInfo['comment']}}</p>
+                    @else
+                    <img src="{{$commentInfo['commenturl']}}" width="50%">
+                    @endif
                 </div>
             </div>
             @endif

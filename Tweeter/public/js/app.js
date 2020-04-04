@@ -1996,11 +1996,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Body'
 });
@@ -2153,6 +2148,7 @@ __webpack_require__.r(__webpack_exports__);
         url: this.selectedGif
       }).then(function (response) {
         console.log(response);
+        window.location.replace(response.data);
       })["catch"](function (error) {
         console.log("Error sending gif");
       });
@@ -6883,7 +6879,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#change-background[data-v-091c0f8d] {\n    background-color: #e8f5e9;\n    padding-bottom: 1vh;\n    padding-top: 3vh;\n}\n#img-people[data-v-091c0f8d]{\n    padding-top:3vh;\n    padding-bottom:2vh;\n}\n.color-icon[data-v-091c0f8d] {\n    color:#1b5e20;\n}\n.text-title[data-v-091c0f8d] {\n    font-family: Cookie;\n    color:#1b5e20;\n    margin-top:3vh;\n}\n", ""]);
+exports.push([module.i, "\n#change-background[data-v-091c0f8d] {\n    background-color: #e8f5e9;\n    padding-bottom: 1vh;\n    padding-top: 3vh;\n}\n#img-people[data-v-091c0f8d]{\n    padding-top:3vh;\n    padding-bottom:2vh;\n}\n.color-icon[data-v-091c0f8d] {\n    color:#1b5e20;\n}\n.text-title[data-v-091c0f8d] {\n    font-family: Cookie;\n    color:#1b5e20;\n    margin-top:3vh;\n}\n.mymargin[data-v-091c0f8d] {\n    margin-top:12vh;\n    margin-bottom:15vh;\n}\n", ""]);
 
 // exports
 
@@ -38511,9 +38507,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("div", { staticClass: "container" }, [
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "row mymargin" }, [
           _c(
             "div",
             { staticClass: "col-xl order-xl-12 align-self-center text-center" },
@@ -38528,9 +38522,15 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("h6", { staticClass: "text-center" }, [
                 _c("i", [
-                  _vm._v(
-                    "Be connected with family, friends and celebrities, keep up with the news or boost your business."
-                  )
+                  _c("span", { staticClass: "animated fadeIn delay-1s" }, [
+                    _vm._v("Be connected with family, friends and celebrities")
+                  ]),
+                  _c("span", { staticClass: "animated fadeIn delay-2s" }, [
+                    _vm._v(", keep up with the news")
+                  ]),
+                  _c("span", { staticClass: "animated fadeIn delay-3s" }, [
+                    _vm._v(" or boost your business.")
+                  ])
                 ])
               ]),
               _vm._v(" "),
@@ -38539,7 +38539,8 @@ var staticRenderFns = [
               _c(
                 "a",
                 {
-                  staticClass: "btn btn-success text-center btn-large",
+                  staticClass:
+                    "btn btn-success text-center btn-large animated heartBeat delay-4s",
                   attrs: { href: "/register" }
                 },
                 [_c("h5", [_vm._v("Start Now")])]
@@ -38564,9 +38565,14 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { attrs: { id: "change-background" } }, [
         _c("div", { staticClass: "container" }, [
-          _c("h1", { staticClass: "text-title text-center" }, [
-            _vm._v("Why Tweeter?")
-          ]),
+          _c(
+            "h1",
+            {
+              staticClass: "text-title text-center",
+              attrs: { "data-aos": "zoom-out" }
+            },
+            [_vm._v(" Why Tweeter?")]
+          ),
           _vm._v(" "),
           _c("div", { staticClass: "row row-cols-xl-3" }, [
             _c("div", { staticClass: "col-xl order-xl-1" }, [
@@ -38615,7 +38621,7 @@ var staticRenderFns = [
                     _c("i", { staticClass: "fas fa-book-reader color-icon" })
                   ]),
                   _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Read, comment and like others opinions")
+                    _vm._v("Read, comment and like other people's opinions")
                   ])
                 ]),
                 _vm._v(" "),
@@ -38626,7 +38632,7 @@ var staticRenderFns = [
                     _c("i", { staticClass: "fas fa-microphone color-icon" })
                   ]),
                   _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Know what celebraties are thinking and doing")
+                    _vm._v("Know what celebrities are thinking and doing")
                   ])
                 ]),
                 _vm._v(" "),
@@ -38730,71 +38736,58 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", [
         _c("div", { staticClass: "container" }, [
-          _c("h1", { staticClass: "text-title text-center" }, [
-            _vm._v("Comments")
-          ]),
-          _vm._v(" "),
           _c(
-            "div",
-            { staticClass: "card", attrs: { "data-aos": "fade-right" } },
-            [
-              _c("div", { staticClass: "card-body" }, [
-                _c("blockquote", { staticClass: "blockquote mb-0" }, [
-                  _c("h5", [
-                    _c("i", {
-                      staticClass:
-                        "fas fa-quote-left fa-pull-left color-icon fa-sm"
-                    }),
-                    _vm._v(
-                      "Twitter is a great way for friends and family—even those halfway across the world—to stay connected to your daily life. Who needs texting when you've got Twitter?"
-                    ),
-                    _c("i", {
-                      staticClass: "fas fa-quote-right color-icon fa-sm"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("footer", { staticClass: "blockquote-footer" }, [
-                    _vm._v("Daniel Nations "),
-                    _c("cite", { attrs: { title: "Source Title" } }, [
-                      _vm._v("Source Lifewire")
-                    ])
-                  ])
+            "h1",
+            {
+              staticClass: "text-title text-center",
+              attrs: { "data-aos": "zoom-out" }
+            },
+            [_vm._v("Comments")]
+          ),
+          _vm._v(" "),
+          _c("div", { attrs: { "data-aos": "fade-right" } }, [
+            _c("blockquote", { staticClass: "blockquote mb-0" }, [
+              _c("h5", [
+                _c("i", {
+                  staticClass: "fas fa-quote-left fa-pull-left color-icon fa-sm"
+                }),
+                _vm._v(
+                  "Twitter is a great way for friends and family—even those halfway across the world—to stay connected to your daily life. Who needs texting when you've got Twitter?"
+                ),
+                _c("i", { staticClass: "fas fa-quote-right color-icon fa-sm" })
+              ]),
+              _vm._v(" "),
+              _c("footer", { staticClass: "blockquote-footer" }, [
+                _vm._v("Daniel Nations "),
+                _c("cite", { attrs: { title: "Source Title" } }, [
+                  _vm._v("Source Lifewire")
                 ])
               ])
-            ]
-          ),
+            ])
+          ]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "card", attrs: { "data-aos": "fade-right" } },
-            [
-              _c("div", { staticClass: "card-body" }, [
-                _c("blockquote", { staticClass: "blockquote mb-0" }, [
-                  _c("h5", [
-                    _c("i", {
-                      staticClass:
-                        "fas fa-quote-left fa-pull-left color-icon fa-sm"
-                    }),
-                    _vm._v(
-                      "Twitter represents one of the quickest and easiest ways to contact a company to get instant customer service."
-                    ),
-                    _c("i", {
-                      staticClass: "fas fa-quote-right color-icon fa-sm"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("footer", { staticClass: "blockquote-footer" }, [
-                    _vm._v("Dave Parrack "),
-                    _c("cite", { attrs: { title: "Source Title" } }, [
-                      _vm._v("Source Makeuseof")
-                    ])
-                  ])
+          _c("div", { attrs: { "data-aos": "fade-right" } }, [
+            _c("blockquote", { staticClass: "blockquote mb-0" }, [
+              _c("h5", [
+                _c("i", {
+                  staticClass: "fas fa-quote-left fa-pull-left color-icon fa-sm"
+                }),
+                _vm._v(
+                  "Twitter represents one of the quickest and easiest ways to contact a company to get instant customer service."
+                ),
+                _c("i", { staticClass: "fas fa-quote-right color-icon fa-sm" })
+              ]),
+              _vm._v(" "),
+              _c("footer", { staticClass: "blockquote-footer" }, [
+                _vm._v("Dave Parrack "),
+                _c("cite", { attrs: { title: "Source Title" } }, [
+                  _vm._v("Source Makeuseof")
                 ])
               ])
-            ]
-          )
+            ])
+          ])
         ])
       ])
     ])
@@ -39123,7 +39116,7 @@ var render = function() {
         }
       ],
       staticClass: "materialize-textarea",
-      attrs: { type: "text", name: "content", value: "", required: "" },
+      attrs: { type: "text", name: "content", value: "" },
       domProps: { value: _vm.nameGif },
       on: {
         input: function($event) {

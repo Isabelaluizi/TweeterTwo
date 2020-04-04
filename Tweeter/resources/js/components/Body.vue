@@ -1,14 +1,13 @@
 <template>
 <div>
     <div class="container">
-        <br>
-        <div class="row">
+        <div class="row mymargin">
             <div class="col-xl order-xl-12 align-self-center text-center">
                 <h5 class="text-center"><strong>See what’s happening in the world right now</strong></h5>
                  <br>
-                <h6 class="text-center"><i>Be connected with family, friends and celebrities, keep up with the news or boost your business.</i></h6>
+                <h6 class="text-center"><i><span class="animated fadeIn delay-1s">Be connected with family, friends and celebrities</span><span class="animated fadeIn delay-2s">, keep up with the news</span><span class="animated fadeIn delay-3s"> or boost your business.</span></i></h6>
                 <br>
-                <a  href="/register" class="btn btn-success text-center btn-large"><h5>Start Now</h5></a>
+                <a  href="/register" class="btn btn-success text-center btn-large animated heartBeat delay-4s"><h5>Start Now</h5></a>
             </div>
             <div class="col-xl order-xl-1">
             <br>
@@ -20,7 +19,7 @@
     </div>
     <div id="change-background">
         <div class="container">
-            <h1 class="text-title text-center">Why Tweeter?</h1>
+            <h1 class="text-title text-center" data-aos="zoom-out"> Why Tweeter?</h1>
             <div class="row row-cols-xl-3">
                 <div class="col-xl order-xl-1">
                     <img data-aos="flip-left" src="images/people.png" alt="people" class= "rounded mx-auto d-block" width=60% id="img-people">
@@ -32,9 +31,9 @@
                     <br>
                     <li data-aos="zoom-in" ><span class="fa-li" ><i class="fas fa-blog color-icon"></i></span><h5 class="text-left">Create your microblogging</h5></li>
                     <br>
-                    <li data-aos="zoom-in"><span class="fa-li"><i class="fas fa-book-reader color-icon"></i></span><h5 class="text-left">Read, comment and like others opinions</h5></li>
+                    <li data-aos="zoom-in"><span class="fa-li"><i class="fas fa-book-reader color-icon"></i></span><h5 class="text-left">Read, comment and like other people's opinions</h5></li>
                     <br>
-                    <li data-aos="zoom-in"><span class="fa-li"><i class="fas fa-microphone color-icon"></i></span><h5 class="text-left">Know what celebraties are thinking and doing</h5></li>
+                    <li data-aos="zoom-in"><span class="fa-li"><i class="fas fa-microphone color-icon"></i></span><h5 class="text-left">Know what celebrities are thinking and doing</h5></li>
                     <br>
                     </ul>
                 </div>
@@ -68,23 +67,19 @@
     </div>
     <div>
         <div class="container">
-            <h1 class="text-title text-center">Comments</h1>
-            <div class="card" data-aos="fade-right">
-                <div class="card-body">
+            <h1 class="text-title text-center" data-aos="zoom-out">Comments</h1>
+            <div data-aos="fade-right">
                     <blockquote class="blockquote mb-0">
                         <h5 ><i class="fas fa-quote-left fa-pull-left color-icon fa-sm"></i>Twitter is a great way for friends and family—even those halfway across the world—to stay connected to your daily life. Who needs texting when you've got Twitter?<i class="fas fa-quote-right color-icon fa-sm"></i></h5>
                         <footer class="blockquote-footer">Daniel Nations <cite title="Source Title">Source Lifewire</cite></footer>
                     </blockquote>
-                </div>
             </div>
             <br>
-            <div class="card" data-aos="fade-right">
-                <div class="card-body">
+            <div data-aos="fade-right">
                     <blockquote class="blockquote mb-0">
                         <h5><i class="fas fa-quote-left fa-pull-left color-icon fa-sm"></i>Twitter represents one of the quickest and easiest ways to contact a company to get instant customer service.<i class="fas fa-quote-right color-icon fa-sm"></i></h5>
                         <footer class="blockquote-footer">Dave Parrack <cite title="Source Title">Source Makeuseof</cite></footer>
                 </blockquote>
-                </div>
             </div>
         </div>
     </div>
@@ -114,5 +109,9 @@ export default {
     font-family: Cookie;
     color:#1b5e20;
     margin-top:3vh;
+}
+.mymargin {
+    margin-top:12vh;
+    margin-bottom:15vh;
 }
 </style>

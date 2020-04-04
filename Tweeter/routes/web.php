@@ -39,7 +39,9 @@ Route::post('/commentForm','feedController@commentForm'); // page to comment one
 Route::post('/commentTweet', 'feedController@commentTweet'); // add comment on database
 Route::get('/readTweets/{tweetId}', 'feedController@showComments'); //show tweet and comments related to tweet
 Route::post('/confirmDeleteComment','feedController@confirmDeleteComment'); //Is confirming to delete a comment
+Route::post('/confirmDeleteGif','feedController@confirmDeleteGif'); //Is confirming to delete a gif
 Route::post('deleteComment', 'feedController@deleteComment'); //is deleting a comment
+Route::post('deleteCommentGif', 'feedController@deleteCommentGif'); //is deleting a gif
 Route::post('/editCommentForm','feedController@editCommentForm'); //showing edit form
 Route::post('/editComment','feedController@editComment'); //update comment
 //Route::post('/likeTweet','feedController@addLike'); //filling the database

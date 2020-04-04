@@ -17,6 +17,7 @@
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cookie" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
         <!-- Styles -->
         <style>
         </style>

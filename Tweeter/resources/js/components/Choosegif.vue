@@ -78,6 +78,7 @@ export default {
                         axios.post("/fillDB",{tweetId: this.tweetId, url: this.selectedGif})
                 .then(response=> {
                     console.log(response);
+                    window.location.replace(response.data);
                     })
                 .catch(error=> {
                     console.log ("Error sending gif");
