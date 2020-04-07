@@ -1996,6 +1996,109 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Body'
 });
@@ -2167,6 +2270,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -6879,7 +6983,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#change-background[data-v-091c0f8d] {\n    background-color: #e8f5e9;\n    padding-bottom: 1vh;\n    padding-top: 3vh;\n}\n#img-people[data-v-091c0f8d]{\n    padding-top:3vh;\n    padding-bottom:2vh;\n}\n.color-icon[data-v-091c0f8d] {\n    color:#1b5e20;\n}\n.text-title[data-v-091c0f8d] {\n    font-family: Cookie;\n    color:#1b5e20;\n    margin-top:3vh;\n}\n.mymargin[data-v-091c0f8d] {\n    margin-top:12vh;\n    margin-bottom:15vh;\n}\n", ""]);
+exports.push([module.i, "\n#change-background[data-v-091c0f8d] {\n    background-color: #e8f5e9;\n    padding-bottom: 1vh;\n    padding-top: 3vh;\n}\n#img-people[data-v-091c0f8d]{\n    padding-top:3vh;\n    padding-bottom:2vh;\n}\n.color-icon[data-v-091c0f8d] {\n    color:#1b5e20;\n}\n.text-title[data-v-091c0f8d] {\n    font-family: Cookie;\n    color:#1b5e20;\n    margin-top:3vh;\n}\n.mymargin[data-v-091c0f8d] {\n    margin-top:12vh;\n    margin-bottom:15vh;\n}\n.comments-section[data-v-091c0f8d] {\n    margin-top: 5vh;\n    margin-bottom: 5vh;\n}\n.avatar[data-v-091c0f8d] {\n    vertical-align: middle;\n  width: 70px;\n  height: 70px;\n  border: 2px solid #1b5e20;\nborder-radius: 50%;\n  margin-left: 2vw;\n  margin-right:2vw;\n}\n.testimonial-one[data-v-091c0f8d] {\n    margin-bottom: 10vh;\n}\n.testimonial-two[data-v-091c0f8d] {\n    margin-bottom: 10vh;\n}\n.author[data-v-091c0f8d] {\n    color:#1b5e20;\n    margin-right: 5vw;\n    margin-top:0;\n    margin-bottom:0;\n}\n\n\n\n", ""]);
 
 // exports
 
@@ -38498,298 +38602,977 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("div", [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "h1",
+          {
+            staticClass: "text-title text-center comments-section",
+            attrs: { "data-aos": "zoom-out" }
+          },
+          [_vm._v(" Comments")]
+        ),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _c(
+          "h1",
+          {
+            staticClass: "text-title text-center comments-section",
+            attrs: { "data-aos": "zoom-out" }
+          },
+          [_vm._v(" Tweeter Customer Testimonial")]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "testimonial-one" }, [
+          _c(
+            "div",
+            {
+              staticClass: "float-left",
+              attrs: {
+                "data-aos": "flip-up",
+                "data-aos-easing": "ease-out-cubic",
+                "data-aos-duration": "1500"
+              }
+            },
+            [
+              _c(
+                "svg",
+                {
+                  staticClass: "avatar",
+                  staticStyle: {
+                    "enable-background": "new 0 0 206.676 206.676"
+                  },
+                  attrs: {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                    version: "1.1",
+                    x: "0px",
+                    y: "0px",
+                    viewBox: "0 0 206.676 206.676",
+                    "xml:space": "preserve"
+                  }
+                },
+                [
+                  _c("g", [
+                    _c("path", {
+                      staticStyle: { fill: "#330C00" },
+                      attrs: {
+                        d:
+                          "M103.485,43.514v160.004c0,0-90.83,9.412-90.83-34.866c0,0,24.397,3.075,19.402-17.273   c-6.332-25.796-2.79-67.574,0-90.408C34.847,38.136,103.485,43.514,103.485,43.514z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#330C00" },
+                      attrs: {
+                        d:
+                          "M103.191,43.514v160.004c0,0,90.83,9.412,90.83-34.866c0,0-24.397,3.075-19.402-17.273   c6.332-25.796,2.79-67.574,0-90.408C171.828,38.136,103.191,43.514,103.191,43.514z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#00B497" },
+                      attrs: {
+                        d:
+                          "M105.07,179.723v-23.311c0,0,37.002-1.121,37.002,21.274L105.07,179.723z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#00B497" },
+                      attrs: {
+                        d:
+                          "M101.9,179.723v-23.311c0,0-37.002-1.121-37.002,21.274L101.9,179.723z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("g", [
+                      _c("g", [
+                        _c("rect", {
+                          staticStyle: { fill: "#FDCC9B" },
+                          attrs: {
+                            x: "88.788",
+                            y: "156.41",
+                            width: "29.395",
+                            height: "32.923"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#FCBC85" },
+                          attrs: {
+                            d:
+                              "M88.788,160.288c0,0,12.364,7.874,29.395,6.051v-9.929H88.788V160.288z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("ellipse", {
+                          staticStyle: { fill: "#FCBC85" },
+                          attrs: {
+                            cx: "46.4",
+                            cy: "105.36",
+                            rx: "14.343",
+                            ry: "16.364"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("ellipse", {
+                          staticStyle: { fill: "#FCBC85" },
+                          attrs: {
+                            cx: "160.568",
+                            cy: "105.36",
+                            rx: "14.343",
+                            ry: "16.364"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#FDCC9B" },
+                          attrs: {
+                            d:
+                              "M160.51,74.104c0-24.104-17.637-41.74-57.025-41.74c-39.39,0-57.026,17.637-57.026,41.74     c0,24.104-4.115,87.597,57.026,87.597C164.626,161.701,160.51,98.209,160.51,74.104z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("g", [
+                          _c("g", [
+                            _c("ellipse", {
+                              staticStyle: { fill: "#3B2519" },
+                              attrs: {
+                                cx: "75.709",
+                                cy: "101.442",
+                                rx: "6.173",
+                                ry: "6.761"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("circle", {
+                              staticStyle: { fill: "#FFFFFF" },
+                              attrs: { cx: "73.018", cy: "98.457", r: "1.846" }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("path", {
+                            staticStyle: { fill: "#684B37" },
+                            attrs: {
+                              d:
+                                "M65.834,86.865c2.919,1.117,7.606-3.799,18.336,0.478c1.955,0.78,3.123-6.668-8.378-6.668      C65.834,80.675,64.07,86.189,65.834,86.865z"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("g", [
+                            _c("ellipse", {
+                              staticStyle: { fill: "#3B2519" },
+                              attrs: {
+                                cx: "132.023",
+                                cy: "101.442",
+                                rx: "6.173",
+                                ry: "6.761"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("circle", {
+                              staticStyle: { fill: "#FFFFFF" },
+                              attrs: { cx: "129.332", cy: "98.457", r: "1.847" }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("path", {
+                            staticStyle: { fill: "#684B37" },
+                            attrs: {
+                              d:
+                                "M141.135,86.865c-2.919,1.117-7.605-3.799-18.335,0.478c-1.955,0.78-3.123-6.668,8.378-6.668      C141.135,80.675,142.899,86.189,141.135,86.865z"
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#FCBC85" },
+                          attrs: {
+                            d:
+                              "M103.485,125.223c-6.1,0-9.774-4.557-9.774-2.352c0,2.204,1.764,6.394,9.774,6.394     c8.01,0,9.773-4.189,9.773-6.394C113.258,120.666,109.584,125.223,103.485,125.223z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#FCBC85" },
+                          attrs: {
+                            d:
+                              "M103.485,145.493c-2.11,0-3.381-1.576-3.381-0.813s0.61,2.212,3.381,2.212s3.38-1.449,3.38-2.212     S105.594,145.493,103.485,145.493z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#F7945E" },
+                          attrs: {
+                            d:
+                              "M103.485,139.876c-9.669,0-15.493-3.938-15.493-2.94c0,0.997,2.796,4.924,15.493,4.924     c12.697,0,15.493-3.927,15.493-4.924C118.978,135.939,113.153,139.876,103.485,139.876z"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("circle", {
+                        staticStyle: { fill: "#F9AA8D" },
+                        attrs: { cx: "67.771", cy: "123.048", r: "8.377" }
+                      }),
+                      _vm._v(" "),
+                      _c("circle", {
+                        staticStyle: { fill: "#F9AA8D" },
+                        attrs: { cx: "140.229", cy: "123.048", r: "8.377" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#8FD6E7" },
+                      attrs: {
+                        d:
+                          "M103.485,169.638v37.038H39.112C39.112,191.685,69.681,169.638,103.485,169.638z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#8FD6E7" },
+                      attrs: {
+                        d:
+                          "M103.485,169.638v37.038h64.372C167.857,191.685,137.289,169.638,103.485,169.638z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#F6B1CF" },
+                      attrs: {
+                        d:
+                          "M103.485,204.999v-35.361c-9.417,0-18.551,1.752-26.874,4.544L103.485,204.999z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#F6B1CF" },
+                      attrs: {
+                        d:
+                          "M103.485,204.999v-35.361c9.416,0,18.55,1.752,26.874,4.544L103.485,204.999z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#F283B4" },
+                      attrs: {
+                        d:
+                          "M103.485,169.638c-6.849,0-13.545,0.939-19.9,2.507c0.905,5.501,4.62,16.787,19.9,16.787   c15.279,0,18.994-11.286,19.899-16.787C117.03,170.576,110.334,169.638,103.485,169.638z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#FDCC9B" },
+                      attrs: {
+                        d:
+                          "M88.788,170.92c0,0-0.001,13.239,14.697,13.239c14.697,0,14.697-13.239,14.697-13.239   S102.933,165.368,88.788,170.92z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#3ABDAA" },
+                      attrs: {
+                        d:
+                          "M80.992,172.401c0.44-2.861-17.119-0.752-16.976,7.321c0.145,8.073,19.401,14.284,24.692,17.224   c5.291,2.939,14.697,9.729,14.697,9.729s1.764-6.82-6.467-12.082C88.709,189.333,80.404,176.223,80.992,172.401z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#3ABDAA" },
+                      attrs: {
+                        d:
+                          "M125.763,172.401c-0.44-2.861,17.119-0.752,16.976,7.321c-0.145,8.073-19.401,14.284-24.692,17.224   c-5.291,2.939-14.697,9.729-14.697,9.729s-1.764-6.82,6.467-12.082C118.046,189.333,126.351,176.223,125.763,172.401z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#401900" },
+                      attrs: {
+                        d:
+                          "M103.485,0C37.346,0,28.528,57.747,28.528,100.303c0,42.557,22.031,67.27,39.243,74.172   c0,0-27.485-48.708-13.964-93.8c11.063-36.894,49.678-26,49.678-26s38.613-10.895,49.677,26c13.521,45.092-13.964,93.8-13.964,93.8   c17.213-6.902,39.244-31.615,39.244-74.172C178.442,57.747,169.624,0,103.485,0z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#401900" },
+                      attrs: {
+                        d:
+                          "M125.85,64.864c0,0-24.824,12.444-46.746,9.946c-21.921-2.499-30.341,20.228-29.003,35.269   l-7.316-33.476l13.228-26.485l37.698-19.4l35.621,1.646l16.893,14.668l14.344,17.832l10.083,11.739l-4.851,36.126l-10.268,12.349   C155.534,125.078,164.824,78.728,125.85,64.864z"
+                      }
+                    })
+                  ]),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g")
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(4)
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "testimonial-two" }, [
+          _c(
+            "div",
+            {
+              staticClass: "float-right",
+              attrs: {
+                "data-aos": "flip-up",
+                "data-aos-easing": "ease-out-cubic",
+                "data-aos-duration": "1500"
+              }
+            },
+            [
+              _c(
+                "svg",
+                {
+                  staticClass: "avatar",
+                  staticStyle: {
+                    "enable-background": "new 0 0 196.651 196.651"
+                  },
+                  attrs: {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                    version: "1.1",
+                    x: "0px",
+                    y: "0px",
+                    viewBox: "0 0 196.651 196.651",
+                    "xml:space": "preserve"
+                  }
+                },
+                [
+                  _c("g", [
+                    _c("g", [
+                      _c("rect", {
+                        staticStyle: { fill: "#FDCC9B" },
+                        attrs: {
+                          x: "83.628",
+                          y: "146.386",
+                          width: "29.395",
+                          height: "32.923"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        staticStyle: { fill: "#FCBC85" },
+                        attrs: {
+                          d:
+                            "M83.628,150.264c0,0,12.365,7.874,29.395,6.051v-9.929H83.628V150.264z"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("ellipse", {
+                        staticStyle: { fill: "#FCBC85" },
+                        attrs: {
+                          cx: "41.242",
+                          cy: "95.336",
+                          rx: "14.343",
+                          ry: "16.364"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("ellipse", {
+                        staticStyle: { fill: "#FCBC85" },
+                        attrs: {
+                          cx: "155.409",
+                          cy: "95.336",
+                          rx: "14.343",
+                          ry: "16.364"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        staticStyle: { fill: "#FDCC9B" },
+                        attrs: {
+                          d:
+                            "M155.352,64.08c0-24.104-17.637-41.74-57.026-41.74c-39.389,0-57.026,17.637-57.026,41.74    c0,24.104-4.115,87.597,57.026,87.597C159.467,151.677,155.352,88.185,155.352,64.08z"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("g", [
+                        _c("g", [
+                          _c("ellipse", {
+                            staticStyle: { fill: "#3B2519" },
+                            attrs: {
+                              cx: "70.55",
+                              cy: "91.418",
+                              rx: "6.173",
+                              ry: "6.761"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("circle", {
+                            staticStyle: { fill: "#FFFFFF" },
+                            attrs: { cx: "67.859", cy: "88.433", r: "1.846" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#86461B" },
+                          attrs: {
+                            d:
+                              "M60.675,74.662c2.919,1.46,7.606-4.96,18.335,0.625c1.956,1.018,3.123-8.708-8.377-8.708     C60.675,66.579,58.911,73.781,60.675,74.662z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("g", [
+                          _c("ellipse", {
+                            staticStyle: { fill: "#3B2519" },
+                            attrs: {
+                              cx: "126.864",
+                              cy: "91.418",
+                              rx: "6.173",
+                              ry: "6.761"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("circle", {
+                            staticStyle: { fill: "#FFFFFF" },
+                            attrs: { cx: "124.173", cy: "88.433", r: "1.846" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#86461B" },
+                          attrs: {
+                            d:
+                              "M135.977,74.662c-2.919,1.46-7.606-4.96-18.335,0.625c-1.956,1.018-3.123-8.708,8.378-8.708     C135.977,66.579,137.74,73.781,135.977,74.662z"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("path", {
+                        staticStyle: { fill: "#FCBC85" },
+                        attrs: {
+                          d:
+                            "M98.326,115.198c-6.1,0-9.774-4.557-9.774-2.352c0,2.204,1.764,6.393,9.774,6.393    c8.01,0,9.774-4.189,9.774-6.393C108.1,110.642,104.425,115.198,98.326,115.198z"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        staticStyle: { fill: "#FCBC85" },
+                        attrs: {
+                          d:
+                            "M98.326,135.469c-2.11,0-3.381-1.576-3.381-0.813c0,0.763,0.61,2.212,3.381,2.212    c2.771,0,3.38-1.449,3.38-2.212C101.706,133.893,100.435,135.469,98.326,135.469z"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        staticStyle: { fill: "#F7945E" },
+                        attrs: {
+                          d:
+                            "M98.326,129.852c-9.668,0-15.493-3.937-15.493-2.939c0,0.997,2.796,4.924,15.493,4.924    c12.697,0,15.493-3.927,15.493-4.924C113.818,125.914,107.994,129.852,98.326,129.852z"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#D58E64" },
+                      attrs: {
+                        d:
+                          "M98.326,159.613v37.038H26.898C26.898,181.66,64.521,159.613,98.326,159.613z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#D58E64" },
+                      attrs: {
+                        d:
+                          "M98.326,159.613v37.038h71.427C169.753,181.66,132.129,159.613,98.326,159.613z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#BF805A" },
+                      attrs: {
+                        d:
+                          "M98.326,159.613c-7.19,0-14.552,1.005-21.689,2.721c0.048,0.063,7.917,10.213,21.689,10.213   c12.754,0,21.233-8.692,22.462-10.03C113.41,160.686,105.775,159.613,98.326,159.613z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#FDCC9B" },
+                      attrs: {
+                        d:
+                          "M83.628,160.895c0,0,4.299,5.332,14.697,5.332c10.398,0,14.698-5.332,14.698-5.332   S97.774,155.344,83.628,160.895z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#86461B" },
+                      attrs: {
+                        d:
+                          "M98.325,139.11v13.669c-30.717,0-40.857-16.378-43.861-20.943   c-2.227-3.387,14.452,11.904,29.164,11.904C90.095,143.74,89.801,139.11,98.325,139.11z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#86461B" },
+                      attrs: {
+                        d:
+                          "M98.325,139.11v13.669c30.718,0,40.858-16.378,43.861-20.943   c2.227-3.387-14.452,11.904-29.164,11.904C106.556,143.74,106.85,139.11,98.325,139.11z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#86461B" },
+                      attrs: {
+                        d:
+                          "M98.712,48.207V0C48.354,0,38.948,18.813,36.596,54.086c-2.352,35.274,2.958,47.417,6.476,47.372   c3.518-0.046,1.627-40.44,6.458-49.136C58.349,36.449,74.113,48.207,98.712,48.207z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#86461B" },
+                      attrs: {
+                        d:
+                          "M98.712,48.207V0c50.358,0,59.764,18.813,62.116,54.086c2.352,35.274-2.958,47.417-6.476,47.372   c-3.518-0.046-1.627-40.44-6.458-49.136C139.076,36.449,123.311,48.207,98.712,48.207z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#744A25" },
+                      attrs: {
+                        d:
+                          "M67.014,165.109c-22.206,7.502-40.115,21.199-40.115,31.542h40.117v-31.542H67.014z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#573514" },
+                      attrs: {
+                        d:
+                          "M69.151,196.651v-33.805c0,0-5.732,2.205-7.716,3.233l-5.85,30.571H69.151z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#744A25" },
+                      attrs: {
+                        d:
+                          "M129.638,165.109c22.206,7.502,40.115,21.199,40.115,31.542h-40.117v-31.542H129.638z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      staticStyle: { fill: "#573514" },
+                      attrs: {
+                        d:
+                          "M127.5,196.651v-33.805c0,0,5.732,2.205,7.716,3.233l5.85,30.571H127.5z"
+                      }
+                    })
+                  ]),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g"),
+                  _c("g")
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _vm._m(6)
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row mymargin" }, [
+        _c(
+          "div",
+          { staticClass: "col-xl order-xl-12 align-self-center text-center" },
+          [
+            _c("h5", { staticClass: "text-center" }, [
+              _c("strong", [
+                _vm._v("See what’s happening in the world right now")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h6", { staticClass: "text-center" }, [
+              _c("i", [
+                _c("span", { staticClass: "animated fadeIn delay-1s" }, [
+                  _vm._v("Be connected with family, friends and celebrities")
+                ]),
+                _c("span", { staticClass: "animated fadeIn delay-2s" }, [
+                  _vm._v(", keep up with the news")
+                ]),
+                _c("span", { staticClass: "animated fadeIn delay-3s" }, [
+                  _vm._v(" or boost your business.")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass:
+                  "btn btn-success text-center btn-large animated heartBeat delay-4s",
+                attrs: { href: "/register" }
+              },
+              [_c("h5", [_vm._v("Start Now")])]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-xl order-xl-1" }, [
+          _c("br"),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "rounded mx-auto d-block animated pulse infinite",
+            attrs: { src: "images/bird.jpg", alt: "bird", width: "80%" }
+          }),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("br")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "change-background" } }, [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row mymargin" }, [
-          _c(
-            "div",
-            { staticClass: "col-xl order-xl-12 align-self-center text-center" },
-            [
-              _c("h5", { staticClass: "text-center" }, [
-                _c("strong", [
-                  _vm._v("See what’s happening in the world right now")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("h6", { staticClass: "text-center" }, [
-                _c("i", [
-                  _c("span", { staticClass: "animated fadeIn delay-1s" }, [
-                    _vm._v("Be connected with family, friends and celebrities")
-                  ]),
-                  _c("span", { staticClass: "animated fadeIn delay-2s" }, [
-                    _vm._v(", keep up with the news")
-                  ]),
-                  _c("span", { staticClass: "animated fadeIn delay-3s" }, [
-                    _vm._v(" or boost your business.")
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "btn btn-success text-center btn-large animated heartBeat delay-4s",
-                  attrs: { href: "/register" }
-                },
-                [_c("h5", [_vm._v("Start Now")])]
-              )
-            ]
-          ),
-          _vm._v(" "),
+        _c(
+          "h1",
+          {
+            staticClass: "text-title text-center",
+            attrs: { "data-aos": "zoom-out" }
+          },
+          [_vm._v(" Why Tweeter?")]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "row row-cols-xl-3" }, [
           _c("div", { staticClass: "col-xl order-xl-1" }, [
-            _c("br"),
-            _vm._v(" "),
             _c("img", {
-              staticClass: "rounded mx-auto d-block animated pulse infinite",
-              attrs: { src: "images/bird.jpg", alt: "bird", width: "80%" }
-            }),
-            _vm._v(" "),
+              staticClass: "rounded mx-auto d-block",
+              attrs: {
+                "data-aos": "flip-left",
+                src: "images/people.png",
+                alt: "people",
+                width: "60%",
+                id: "img-people"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xl order-xl-4" }, [
             _c("br"),
             _vm._v(" "),
-            _c("br")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "change-background" } }, [
-        _c("div", { staticClass: "container" }, [
-          _c(
-            "h1",
-            {
-              staticClass: "text-title text-center",
-              attrs: { "data-aos": "zoom-out" }
-            },
-            [_vm._v(" Why Tweeter?")]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "row row-cols-xl-3" }, [
-            _c("div", { staticClass: "col-xl order-xl-1" }, [
-              _c("img", {
-                staticClass: "rounded mx-auto d-block",
-                attrs: {
-                  "data-aos": "flip-left",
-                  src: "images/people.png",
-                  alt: "people",
-                  width: "60%",
-                  id: "img-people"
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-xl order-xl-4" }, [
-              _c("br"),
-              _vm._v(" "),
-              _c("ul", { staticClass: "fa-ul" }, [
-                _c("li", { attrs: { "data-aos": "zoom-in" } }, [
-                  _c("span", { staticClass: "fa-li" }, [
-                    _c("i", { staticClass: "fas fa-user-plus color-icon" })
-                  ]),
-                  _c("h5", { staticClass: "text-left" }, [
-                    _vm._v(
-                      " Be connected with your friends and family no matter where they are"
-                    )
-                  ])
+            _c("ul", { staticClass: "fa-ul" }, [
+              _c("li", { attrs: { "data-aos": "zoom-in" } }, [
+                _c("span", { staticClass: "fa-li" }, [
+                  _c("i", { staticClass: "fas fa-user-plus color-icon" })
                 ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", { attrs: { "data-aos": "zoom-in" } }, [
-                  _c("span", { staticClass: "fa-li" }, [
-                    _c("i", { staticClass: "fas fa-blog color-icon" })
-                  ]),
-                  _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Create your microblogging")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", { attrs: { "data-aos": "zoom-in" } }, [
-                  _c("span", { staticClass: "fa-li" }, [
-                    _c("i", { staticClass: "fas fa-book-reader color-icon" })
-                  ]),
-                  _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Read, comment and like other people's opinions")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", { attrs: { "data-aos": "zoom-in" } }, [
-                  _c("span", { staticClass: "fa-li" }, [
-                    _c("i", { staticClass: "fas fa-microphone color-icon" })
-                  ]),
-                  _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Know what celebrities are thinking and doing")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-xl order-xl-2" }, [
-              _c("img", {
-                staticClass: "rounded mx-auto d-block",
-                attrs: {
-                  "data-aos": "flip-left",
-                  src: "images/Business.png",
-                  alt: "Business",
-                  width: "60%",
-                  id: "img-people"
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-xl order-xl-5" }, [
-              _c("br"),
-              _vm._v(" "),
-              _c("ul", { staticClass: "fa-ul" }, [
-                _c("li", { attrs: { "data-aos": "zoom-in" } }, [
-                  _c("span", { staticClass: "fa-li" }, [
-                    _c("i", { staticClass: "fas fa-dollar-sign color-icon" })
-                  ]),
-                  _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Reach a global audience fast")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", { attrs: { "data-aos": "zoom-in" } }, [
-                  _c("span", { staticClass: "fa-li" }, [
-                    _c("i", { staticClass: "fas fa-chart-line color-icon" })
-                  ]),
-                  _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Improve customer service")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", { attrs: { "data-aos": "zoom-in" } }, [
-                  _c("span", { staticClass: "fa-li" }, [
-                    _c("i", { staticClass: "fas fa-chart-pie color-icon" })
-                  ]),
-                  _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Test reaction in the Market")
-                  ])
+                _c("h5", { staticClass: "text-left" }, [
+                  _vm._v(
+                    " Be connected with your friends and family no matter where they are"
+                  )
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-xl order-xl-3" }, [
-              _c("img", {
-                staticClass: "rounded mx-auto d-block",
-                attrs: {
-                  "data-aos": "flip-left",
-                  src: "images/news.jpg",
-                  alt: "news",
-                  width: "60%",
-                  id: "img-people"
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-xl order-xl-6" }, [
-              _c("ul", { staticClass: "fa-ul" }, [
-                _c("br"),
-                _vm._v(" "),
-                _c("li", { attrs: { "data-aos": "zoom-in" } }, [
-                  _c("span", { staticClass: "fa-li" }, [
-                    _c("i", { staticClass: "fas fa-globe-europe color-icon" })
-                  ]),
-                  _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Keep track of world news")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", { attrs: { "data-aos": "zoom-in" } }, [
-                  _c("span", { staticClass: "fa-li" }, [
-                    _c("i", { staticClass: "fas fa-newspaper color-icon" })
-                  ]),
-                  _c("h5", { staticClass: "text-left" }, [
-                    _vm._v("Newspapers, magazine and TV stations")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br")
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _c("div", { staticClass: "container" }, [
-          _c(
-            "h1",
-            {
-              staticClass: "text-title text-center",
-              attrs: { "data-aos": "zoom-out" }
-            },
-            [_vm._v("Comments")]
-          ),
-          _vm._v(" "),
-          _c("div", { attrs: { "data-aos": "fade-right" } }, [
-            _c("blockquote", { staticClass: "blockquote mb-0" }, [
-              _c("h5", [
-                _c("i", {
-                  staticClass: "fas fa-quote-left fa-pull-left color-icon fa-sm"
-                }),
-                _vm._v(
-                  "Twitter is a great way for friends and family—even those halfway across the world—to stay connected to your daily life. Who needs texting when you've got Twitter?"
-                ),
-                _c("i", { staticClass: "fas fa-quote-right color-icon fa-sm" })
               ]),
               _vm._v(" "),
-              _c("footer", { staticClass: "blockquote-footer" }, [
-                _vm._v("Daniel Nations "),
-                _c("cite", { attrs: { title: "Source Title" } }, [
-                  _vm._v("Source Lifewire")
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { attrs: { "data-aos": "zoom-in" } }, [
+                _c("span", { staticClass: "fa-li" }, [
+                  _c("i", { staticClass: "fas fa-blog color-icon" })
+                ]),
+                _c("h5", { staticClass: "text-left" }, [
+                  _vm._v("Create your microblogging")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { attrs: { "data-aos": "zoom-in" } }, [
+                _c("span", { staticClass: "fa-li" }, [
+                  _c("i", { staticClass: "fas fa-book-reader color-icon" })
+                ]),
+                _c("h5", { staticClass: "text-left" }, [
+                  _vm._v("Read, comment and like other people's opinions")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { attrs: { "data-aos": "zoom-in" } }, [
+                _c("span", { staticClass: "fa-li" }, [
+                  _c("i", { staticClass: "fas fa-microphone color-icon" })
+                ]),
+                _c("h5", { staticClass: "text-left" }, [
+                  _vm._v("Know what celebrities are thinking and doing")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("br")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xl order-xl-2" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block",
+              attrs: {
+                "data-aos": "flip-left",
+                src: "images/Business.png",
+                alt: "Business",
+                width: "60%",
+                id: "img-people"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xl order-xl-5" }, [
+            _c("br"),
+            _vm._v(" "),
+            _c("ul", { staticClass: "fa-ul" }, [
+              _c("li", { attrs: { "data-aos": "zoom-in" } }, [
+                _c("span", { staticClass: "fa-li" }, [
+                  _c("i", { staticClass: "fas fa-dollar-sign color-icon" })
+                ]),
+                _c("h5", { staticClass: "text-left" }, [
+                  _vm._v("Reach a global audience fast")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { attrs: { "data-aos": "zoom-in" } }, [
+                _c("span", { staticClass: "fa-li" }, [
+                  _c("i", { staticClass: "fas fa-chart-line color-icon" })
+                ]),
+                _c("h5", { staticClass: "text-left" }, [
+                  _vm._v("Improve customer service")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { attrs: { "data-aos": "zoom-in" } }, [
+                _c("span", { staticClass: "fa-li" }, [
+                  _c("i", { staticClass: "fas fa-chart-pie color-icon" })
+                ]),
+                _c("h5", { staticClass: "text-left" }, [
+                  _vm._v("Test reaction in the Market")
                 ])
               ])
             ])
           ]),
           _vm._v(" "),
-          _c("br"),
+          _c("div", { staticClass: "col-xl order-xl-3" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block",
+              attrs: {
+                "data-aos": "flip-left",
+                src: "images/news.jpg",
+                alt: "news",
+                width: "60%",
+                id: "img-people"
+              }
+            })
+          ]),
           _vm._v(" "),
-          _c("div", { attrs: { "data-aos": "fade-right" } }, [
-            _c("blockquote", { staticClass: "blockquote mb-0" }, [
-              _c("h5", [
-                _c("i", {
-                  staticClass: "fas fa-quote-left fa-pull-left color-icon fa-sm"
-                }),
-                _vm._v(
-                  "Twitter represents one of the quickest and easiest ways to contact a company to get instant customer service."
-                ),
-                _c("i", { staticClass: "fas fa-quote-right color-icon fa-sm" })
+          _c("div", { staticClass: "col-xl order-xl-6" }, [
+            _c("ul", { staticClass: "fa-ul" }, [
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { attrs: { "data-aos": "zoom-in" } }, [
+                _c("span", { staticClass: "fa-li" }, [
+                  _c("i", { staticClass: "fas fa-globe-europe color-icon" })
+                ]),
+                _c("h5", { staticClass: "text-left" }, [
+                  _vm._v("Keep track of world news")
+                ])
               ]),
               _vm._v(" "),
-              _c("footer", { staticClass: "blockquote-footer" }, [
-                _vm._v("Dave Parrack "),
-                _c("cite", { attrs: { title: "Source Title" } }, [
-                  _vm._v("Source Makeuseof")
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { attrs: { "data-aos": "zoom-in" } }, [
+                _c("span", { staticClass: "fa-li" }, [
+                  _c("i", { staticClass: "fas fa-newspaper color-icon" })
+                ]),
+                _c("h5", { staticClass: "text-left" }, [
+                  _vm._v("Newspapers, magazine and TV stations")
                 ])
-              ])
+              ]),
+              _vm._v(" "),
+              _c("br")
             ])
           ])
         ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { "data-aos": "fade-right" } }, [
+      _c("blockquote", { staticClass: "blockquote mb-0" }, [
+        _c("h5", [
+          _c("i", {
+            staticClass: "fas fa-quote-left fa-pull-left color-icon fa-sm"
+          }),
+          _vm._v(
+            "Twitter is a great way for friends and family—even those halfway across the world—to stay connected to your daily life. Who needs texting when you've got Twitter?"
+          ),
+          _c("i", { staticClass: "fas fa-quote-right color-icon fa-sm" })
+        ]),
+        _vm._v(" "),
+        _c("footer", { staticClass: "blockquote-footer" }, [
+          _vm._v("Daniel Nations "),
+          _c("cite", { attrs: { title: "Source Title" } }, [
+            _vm._v("Source Lifewire")
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { "data-aos": "fade-right" } }, [
+      _c("blockquote", { staticClass: "blockquote mb-0" }, [
+        _c("h5", [
+          _c("i", {
+            staticClass: "fas fa-quote-left fa-pull-left color-icon fa-sm"
+          }),
+          _vm._v(
+            "Twitter represents one of the quickest and easiest ways to contact a company to get instant customer service."
+          ),
+          _c("i", { staticClass: "fas fa-quote-right color-icon fa-sm" })
+        ]),
+        _vm._v(" "),
+        _c("footer", { staticClass: "blockquote-footer" }, [
+          _vm._v("Dave Parrack "),
+          _c("cite", { attrs: { title: "Source Title" } }, [
+            _vm._v("Source Makeuseof")
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "div",
+        {
+          staticClass: "testimonial",
+          attrs: {
+            "data-aos": "flip-left",
+            "data-aos-easing": "ease-out-cubic",
+            "data-aos-duration": "1500"
+          }
+        },
+        [
+          _c("h5", [
+            _vm._v(
+              '"This is the best social media that I have already tried! Everything is amazing and beautiful. I have been using it for 1 month and until now I am loving it!"'
+            )
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "p",
+          {
+            staticClass: "text-right author",
+            attrs: { "data-aos": "fade-left" }
+          },
+          [_c("i", [_vm._v("Amelia")])]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "testimonial",
+        attrs: {
+          "data-aos": "flip-right",
+          "data-aos-easing": "ease-out-cubic",
+          "data-aos-duration": "1500"
+        }
+      },
+      [
+        _c("h5", [
+          _vm._v(
+            '"I really love this new Tweeter. I can chat with robot whenever I want and they always tell me what I want to read. Thank you for creating this website"'
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "p",
+        {
+          staticClass: "text-right author",
+          attrs: { "data-aos": "fade-left" }
+        },
+        [_c("i", [_vm._v("James")])]
+      )
     ])
   }
 ]
@@ -38951,6 +39734,26 @@ var staticRenderFns = [
         _vm._v("Copyright "),
         _c("i", { staticClass: "far fa-copyright" }),
         _vm._v(" 2020")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "text-right" }, [
+        _vm._v("Icons made by "),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://www.flaticon.com/authors/freepik",
+              title: "Freepik"
+            }
+          },
+          [_vm._v("Freepik")]
+        ),
+        _vm._v(" from "),
+        _c(
+          "a",
+          { attrs: { href: "https://www.flaticon.com/", title: "Flaticon" } },
+          [_vm._v("www.flaticon.com")]
+        )
       ])
     ])
   }

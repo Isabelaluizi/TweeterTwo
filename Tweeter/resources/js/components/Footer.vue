@@ -1,6 +1,7 @@
 <template>
     <div id="footer">
         <p class="text-center" id="copyright">Copyright <i class="far fa-copyright"></i> 2020</p>
+        <div class="text-right">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
 </template>
 
