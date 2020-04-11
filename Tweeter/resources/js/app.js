@@ -28,6 +28,7 @@ window.Vue = require('vue');
 Vue.component('Root', require('./components/Root.vue').default);
 Vue.component('Like', require('./components/ButtonLike.vue').default);
 Vue.component('Giphy', require('./components/Giphy.vue').default);
+Vue.component('Comment', require('./components/Nestedcomment.vue').default);
 //Vue.component('InfiniteLoading',require('vue-infinite-loading'));
 //Vue.component('myExample', require('./components/New.vue').default);
 

@@ -17,7 +17,7 @@ class feedController extends Controller
             foreach($tweets as $tweet) {
                 $likes=\App\Like::where("tweet_id","$tweet->id")->get();
                 $comments=\App\Comment::where("tweet_id","$tweet->id")->get();
-                $gifcomments=\App\Comment::where("tweet_id","$tweet->id")->get();
+                $gifcomments=\App\Gifcomment::where("tweet_id","$tweet->id")->get();
                 $numLikes=count($likes);
                 $numComments=count($comments)+ count($gifcomments);
                 $userId=$tweet->user_id;
@@ -157,6 +157,13 @@ class feedController extends Controller
         $gifComment->url = $request->url;
         $gifComment->save();
         return response()->json("readTweets/$request->tweetId");
+    }
+    function addNestedComment (Request $request) {
+        $nestedComment = new \App\Nestedcomment;
+        $nestedComment->user_id = Auth::user()->id;
+        $nestedComment->comment_id = $request->commentId;
+        $nestedComment->content = $request->nestedComment;
+        $nestedComment->save();
     }
 
 

@@ -50,3 +50,4 @@ Route::get('/checkUserLogin', 'userController@isUserLoggedinAPI'); //checking if
 Route::post('/APIcheckLike','feedController@checkUserLiked'); //check if tweet has already been liked
 Route::post('/checkUserLiked','feedController@addLike'); //adding or deleting like
 Route::post('/fillDB','feedController@addGifComment'); //adding gif comment on database
+Route::post('/APInestedComment', 'feedController@addNestedComment'); //adding nested comment on database

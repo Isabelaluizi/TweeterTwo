@@ -13,4 +13,7 @@ class Comment extends Model
     public function tweet() {
         return $this->belongsTo('App\Tweet','tweet_id','id');
     }
+    public function nestedcomments() {
+        return $this->hasMany('App\Nestedcomment','comment_id','id');
+    }
 }
