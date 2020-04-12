@@ -72,6 +72,7 @@ class feedController extends Controller
                 if($gifcomment->created_at >= $comment->created_at) {
                 array_push ($commentsInfo, [
                     "commentId" => "$gifcomment->id",
+                    "tweetId" => "$gifcomment->tweet_id",
                     "commentuserId" => "$gifcomment->user_id",
                     "name" => \App\User::find($gifcomment->user_id)->name,
                     "comment" => null,
@@ -87,6 +88,7 @@ class feedController extends Controller
             }
             array_push ($commentsInfo, [
                 "commentId" => "$comment->id",
+                "tweetId" => "$comment->tweet_id",
                 "commentuserId" => "$comment->user_id",
                 "name" => \App\User::find($comment->user_id)->name,
                 "comment" => "$comment->content",
@@ -163,7 +165,31 @@ class feedController extends Controller
         $nestedComment->user_id = Auth::user()->id;
         $nestedComment->comment_id = $request->commentId;
         $nestedComment->content = $request->nestedComment;
+        if($request->commentContent == null ) {
+            $nestedComment->isGif = "true";
+        } else {
+            $nestedComment->isGif = "false";
+        }
         $nestedComment->save();
+        return response()->json("readTweets/$request->tweetId");
+    }
+    function getNestedComment (Request $request) {
+        if($request->commentContent == null) {
+            $nestedComments=\App\Nestedcomment::where('comment_id',"$request->commentId")->where('isGif',"true")->get();
+            $userNames=[];
+            foreach ($nestedComments as $nestedComment) {
+                array_push ($userNames,[
+                "name" => \App\User::find($nestedComment->user_id)->name]);
+            }
+        } else {
+            $nestedComments=\App\Nestedcomment::where('comment_id',"$request->commentId")->where('isGif',"false")->get();
+            $userNames=[];
+            foreach ($nestedComments as $nestedComment) {
+                array_push ($userNames,[
+                    "name" => \App\User::find($nestedComment->user_id)->name]);
+            }
+        }
+        return response()->json(['nestedComments'=>$nestedComments, 'userNames' =>$userNames]);
     }
 
 

@@ -18,6 +18,7 @@ class CreateNestedcommentsTable extends Migration
             $table->bigInteger('user_id');
             $table->bigInteger('comment_id');
             $table->text('content');
+            $table->text('isGif');
             $table->date('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->date('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });

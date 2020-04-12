@@ -51,3 +51,4 @@ Route::post('/APIcheckLike','feedController@checkUserLiked'); //check if tweet h
 Route::post('/checkUserLiked','feedController@addLike'); //adding or deleting like
 Route::post('/fillDB','feedController@addGifComment'); //adding gif comment on database
 Route::post('/APInestedComment', 'feedController@addNestedComment'); //adding nested comment on database
+Route::post('/APIGetNestedComment','feedController@getNestedComment'); //getting nested comment on database to ShowCommentsVue

@@ -29,7 +29,7 @@ export default {
 
         },
         sendCommentDB() {
-            axios.post('/APInestedComment', { commentId:this.comment.commentId, commentContent:this.comment.comment, nestedComment: this.nestedComment})
+            axios.post('/APInestedComment', { commentId:this.comment.commentId, commentContent:this.comment.comment,tweetId:this.comment.tweetId, nestedComment: this.nestedComment})
                 .then(response=> {
                     console.log(response.data);
                 })
