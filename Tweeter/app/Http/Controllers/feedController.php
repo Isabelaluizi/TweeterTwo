@@ -176,20 +176,22 @@ class feedController extends Controller
     function getNestedComment (Request $request) {
         if($request->commentContent == null) {
             $nestedComments=\App\Nestedcomment::where('comment_id',"$request->commentId")->where('isGif',"true")->get();
-            $userNames=[];
+            $nestedCommentsInfo=[];
             foreach ($nestedComments as $nestedComment) {
-                array_push ($userNames,[
-                "name" => \App\User::find($nestedComment->user_id)->name]);
+                array_push ($nestedCommentsInfo,[
+                "name" => \App\User::find($nestedComment->user_id)->name,
+                $nestedComment]);
             }
         } else {
             $nestedComments=\App\Nestedcomment::where('comment_id',"$request->commentId")->where('isGif',"false")->get();
-            $userNames=[];
+            $nestedCommentsInfo=[];
             foreach ($nestedComments as $nestedComment) {
-                array_push ($userNames,[
-                    "name" => \App\User::find($nestedComment->user_id)->name]);
+                array_push ($nestedCommentsInfo,[
+                    "name" => \App\User::find($nestedComment->user_id)->name,
+                    $nestedComment]);
             }
         }
-        return response()->json(['nestedComments'=>$nestedComments, 'userNames' =>$userNames]);
+        return response()->json(['nestedCommentsInfo'=>$nestedCommentsInfo]);
     }
 
 
