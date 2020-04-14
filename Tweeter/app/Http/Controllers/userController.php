@@ -63,6 +63,7 @@ class userController extends Controller
         if($request->option=="yes") {
             $tweets = Auth::user()->tweets;
             $comments = Auth::user()->comments;
+            $nestedComments = Auth::user()->nestedcomments;
             $likes = Auth::user()->likes;
             $follows = Auth::user()->follows;
             foreach ($tweets as $tweet) {
@@ -70,6 +71,9 @@ class userController extends Controller
             }
             foreach ($comments as $comment) {
                 \App\Comment::destroy($comment->id);
+            }
+            foreach ($nestedComments as $nestedComment) {
+                \App\Nestedcomment::destroy($nestedComment->id);
             }
             foreach ($likes as $like) {
                 \App\Like::destroy($like->id);
@@ -112,6 +116,15 @@ class userController extends Controller
             $user=false;
             return response()->json($user);
         }
+   }
+   function isUser (Request $request) {
+    if (Auth::user()->id == $request->userId) {
+        $user=true;
+        return response()->json($user);
+    } else {
+        $user=false;
+        return response()->json($user);
+    }
    }
 
 }

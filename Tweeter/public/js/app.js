@@ -2543,6 +2543,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Showcomment',
   props: {
@@ -2551,6 +2552,27 @@ __webpack_require__.r(__webpack_exports__);
     },
     name: {
       type: String
+    },
+    userId: {
+      type: Number
+    }
+  },
+  data: function data() {
+    return {
+      checkUser: this.checkuserId()
+    };
+  },
+  methods: {
+    checkuserId: function checkuserId() {
+      var _this = this;
+
+      axios.post('/APICheckUserId', {
+        userId: this.userId
+      }).then(function (response) {
+        _this.checkUser = response.data;
+      })["catch"](function (error) {
+        console.log("Error checking user");
+      });
     }
   }
 });
@@ -40334,15 +40356,29 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row", attrs: { id: "show-comment" } }, [
-      _c("div", { staticClass: "col s6", attrs: { id: "name" } }, [
-        _c("p", [_c("strong", [_vm._v(_vm._s(_vm.name) + ":")])])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col s6" }, [
-        _c("p", [_vm._v(_vm._s(_vm.getComment))])
-      ])
-    ])
+    _c(
+      "div",
+      { staticClass: "row  valign-wrapper", attrs: { id: "show-comment" } },
+      [
+        _c("div", { staticClass: "col s5", attrs: { id: "name" } }, [
+          _c("p", [_c("strong", [_vm._v(_vm._s(_vm.name) + ":")])])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col s6" }, [
+          _c("p", [_vm._v(_vm._s(_vm.getComment))])
+        ]),
+        _vm._v(" "),
+        this.checkUser
+          ? _c("div", { staticClass: "col s1 center-align" }, [
+              _c(
+                "i",
+                { staticClass: "material-icons green-text text-lighten-1" },
+                [_vm._v("delete")]
+              )
+            ])
+          : _vm._e()
+      ]
+    )
   ])
 }
 var staticRenderFns = []
@@ -40382,7 +40418,8 @@ var render = function() {
             _c("Showcomment", {
               attrs: {
                 getComment: nestedComment[0].content,
-                name: nestedComment.name
+                name: nestedComment.name,
+                userId: nestedComment[0].user_id
               }
             })
           ],
@@ -53455,15 +53492,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************!*\
   !*** ./resources/js/components/Showcomment.vue ***!
   \*************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Showcomment_vue_vue_type_template_id_f3ea12b2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Showcomment.vue?vue&type=template&id=f3ea12b2&scoped=true& */ "./resources/js/components/Showcomment.vue?vue&type=template&id=f3ea12b2&scoped=true&");
 /* harmony import */ var _Showcomment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Showcomment.vue?vue&type=script&lang=js& */ "./resources/js/components/Showcomment.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Showcomment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Showcomment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _Showcomment_vue_vue_type_style_index_0_id_f3ea12b2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Showcomment.vue?vue&type=style&index=0&id=f3ea12b2&scoped=true&lang=css& */ "./resources/js/components/Showcomment.vue?vue&type=style&index=0&id=f3ea12b2&scoped=true&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Showcomment_vue_vue_type_style_index_0_id_f3ea12b2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Showcomment.vue?vue&type=style&index=0&id=f3ea12b2&scoped=true&lang=css& */ "./resources/js/components/Showcomment.vue?vue&type=style&index=0&id=f3ea12b2&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -53495,7 +53531,7 @@ component.options.__file = "resources/js/components/Showcomment.vue"
 /*!**************************************************************************!*\
   !*** ./resources/js/components/Showcomment.vue?vue&type=script&lang=js& ***!
   \**************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

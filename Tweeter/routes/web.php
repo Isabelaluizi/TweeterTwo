@@ -52,3 +52,4 @@ Route::post('/checkUserLiked','feedController@addLike'); //adding or deleting li
 Route::post('/fillDB','feedController@addGifComment'); //adding gif comment on database
 Route::post('/APInestedComment', 'feedController@addNestedComment'); //adding nested comment on database
 Route::post('/APIGetNestedComment','feedController@getNestedComment'); //getting nested comment on database to ShowCommentsVue
+Route::post('/APICheckUserId','userController@isUser');//checking if the nested comment belongs to user

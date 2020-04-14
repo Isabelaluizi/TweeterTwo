@@ -106,15 +106,23 @@ class feedController extends Controller
     }
     function deleteComment (Request $request) {
         if($request->option=="yes") {
-        \App\Comment::destroy($request->commentId);
+            $nestedComments = \App\Nestedcomment::where("comment_id","$request->commentId")->where("isGif","false")->get();
+            foreach ($nestedComments as $nestedComment) {
+                \App\Tweet::destroy($nestedComment->id);
+            }
+            \App\Comment::destroy($request->commentId);
         }
         return redirect ("/readTweets/$request->tweetId");
     }
     function deleteCommentGif (Request $request) {
         if($request->option=="yes") {
+            $nestedComments = \App\Nestedcomment::where("comment_id","$request->commentIdGif")->where("isGif","true")->get();
+            foreach ($nestedComments as $nestedComment) {
+                \App\Tweet::destroy($nestedComment->id);
+            }
             \App\Gifcomment::destroy($request->commentIdGif);
             }
-            return redirect ("/readTweets/$request->tweetId");
+        return redirect ("/readTweets/$request->tweetId");
     }
     function editCommentForm (Request $request) {
         $comment=\App\Comment::find($request->commentId);
