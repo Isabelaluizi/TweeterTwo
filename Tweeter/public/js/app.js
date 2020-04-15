@@ -39781,7 +39781,7 @@ var staticRenderFns = [
         [
           _c("h5", [
             _vm._v(
-              '"This is the best social media that I have already tried! Everything is amazing and beautiful. I have been using it for 1 month and until now I am loving it!"'
+              '"This is the best social media that I have ever tried! Everything is amazing and beautiful. I have been using it for 1 month and until now I am loving it!"'
             )
           ])
         ]

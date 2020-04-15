@@ -130,7 +130,7 @@
                 </div>
                 <div>
                     <div class="testimonial" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                    <h5>"This is the best social media that I have already tried! Everything is amazing and beautiful. I have been using it for 1 month and until now I am loving it!"</h5>
+                    <h5>"This is the best social media that I have ever tried! Everything is amazing and beautiful. I have been using it for 1 month and until now I am loving it!"</h5>
                     </div>
                     <div>
                         <p class="text-right author" data-aos="fade-left"><i>Amelia</i></p>
