@@ -1,10 +1,8 @@
 <template>
-    <div class="container">
-        <div class="row  valign-wrapper" id="show-comment">
+    <div class="col s12  valign-wrapper" id="show-comment">
         <div id="name" class="col s5"><p><strong>{{name}}:</strong></p></div>
         <div class="col s6"><p>{{getComment}}</p></div>
-        <div class="col s1 center-align" v-if="this.checkUser"><i class="material-icons green-text text-lighten-1">delete</i></div>
-        </div>
+        <div class="col s1 center-align" v-if="this.checkUser" @click="checkDelete()"><button class="waves-effect waves-teal btn-flat green-text text-dark"><i class="material-icons green-text text-lighten-1">delete</i></button></div>
     </div>
 </template>
 
@@ -21,6 +19,10 @@ export default {
         userId: {
             type:Number
         },
+        nestedCommentId: {
+            type:Number
+        },
+
     },
     data() {
         return {
@@ -37,8 +39,19 @@ export default {
                 .catch(error=> {
                     console.log("Error checking user");
                 });
+            },
+        checkDelete() {
+            if(confirm("Are you sure that you want to delete your comment?")) {
+                axios.post('/APIdeleteNestedComment', { nestedCommentId:this.nestedCommentId })
+                .then(response=> {
+                    console.log(response.data);
+                })
+                .catch(error=> {
+                    console.log("Error checking user");
+                });
             }
         }
+    }
 }
 </script>
 

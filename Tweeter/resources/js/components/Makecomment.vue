@@ -1,7 +1,7 @@
 <template>
-<div id="make-comment">
+<div id="make-comment" class="col">
    <button @click="showTextarea()" class="waves-effect waves-teal btn-flat green-text text-dark"><i class="material-icons green-text text-lighten-1 left">mode_comment</i>Comment</button>
-   <div class="col s12 center-align" v-if="this.isClicked">
+   <div class= "center-align" v-if="this.isClicked">
        <br>
     <textarea id="nestedComment" class="materialize-textarea" type="text" v-model="nestedComment"></textarea>
     <label for="nestedComment">Write your comment</label>

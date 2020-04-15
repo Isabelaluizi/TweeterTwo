@@ -67,6 +67,18 @@ class feedController extends Controller
             "created_at" =>"$tweet->created_at",
         ];
         $commentsInfo=[];
+        if(count($comments)==0 && count($gifcomments)!= 0) {
+        foreach($gifcomments as $gifcomment) {
+            array_push ($commentsInfo, [
+                "commentId" => "$gifcomment->id",
+                "tweetId" => "$gifcomment->tweet_id",
+                "commentuserId" => "$gifcomment->user_id",
+                "name" => \App\User::find($gifcomment->user_id)->name,
+                "comment" => null,
+                "commenturl" => "$gifcomment->url",
+                "created_at" => "$gifcomment->created_at"]);
+            }
+        } else {
         foreach($comments as $comment) {
             foreach($gifcomments as $gifcomment) {
                 if($gifcomment->created_at >= $comment->created_at) {
@@ -95,6 +107,7 @@ class feedController extends Controller
                 "commenturl" => null,
                 "created_at" => "$comment->created_at"]);
         }
+    }
     }
         return view ('showTweetInfo', ['tweetInfo'=>$tweetInfo], ['commentsInfo'=>$commentsInfo]);
     }
@@ -201,6 +214,10 @@ class feedController extends Controller
         }
         return response()->json(['nestedCommentsInfo'=>$nestedCommentsInfo]);
     }
+    function deleteNestedComment (Request $request) {
+        \App\Nestedcomment::destroy($request->nestedCommentId);
+    }
+
 
 
 

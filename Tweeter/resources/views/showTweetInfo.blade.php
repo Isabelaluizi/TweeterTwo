@@ -40,7 +40,6 @@
     </div>
     <br>
     <div class="divider"></div>
-
     @if ($commentsInfo != NULL)
         @foreach ($commentsInfo as $commentInfo)
             @php

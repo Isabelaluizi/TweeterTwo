@@ -3,9 +3,7 @@
         <div>
         {{ getNestedCommentsDB() }}
         </div>
-        <div v-for="nestedComment in nestedComments" :key="nestedComment[0].id">
-        <Showcomment :getComment="nestedComment[0].content" :name="nestedComment.name" :userId="nestedComment[0].user_id" />
-        </div>
+        <Showcomment v-for="nestedComment in nestedComments" :key="nestedComment[0].id" :getComment="nestedComment[0].content" :name="nestedComment.name" :userId="nestedComment[0].user_id" :nestedCommentId="nestedComment[0].id" />
     </div>
 </template>
 

@@ -53,3 +53,4 @@ Route::post('/fillDB','feedController@addGifComment'); //adding gif comment on d
 Route::post('/APInestedComment', 'feedController@addNestedComment'); //adding nested comment on database
 Route::post('/APIGetNestedComment','feedController@getNestedComment'); //getting nested comment on database to ShowCommentsVue
 Route::post('/APICheckUserId','userController@isUser');//checking if the nested comment belongs to user
+Route::post('/APIdeleteNestedComment','feedController@deleteNestedComment'); //is passing nested Comment Id and deleting it
