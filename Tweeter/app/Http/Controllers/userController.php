@@ -64,6 +64,7 @@ class userController extends Controller
             $tweets = Auth::user()->tweets;
             $comments = Auth::user()->comments;
             $nestedComments = Auth::user()->nestedcomments;
+            $gifComments = Auth::user()->gifcomments;
             $likes = Auth::user()->likes;
             $follows = Auth::user()->follows;
             foreach ($tweets as $tweet) {
@@ -71,6 +72,9 @@ class userController extends Controller
             }
             foreach ($comments as $comment) {
                 \App\Comment::destroy($comment->id);
+            }
+            foreach ($gifComments as $gifComment) {
+                \App\Comment::destroy($gifComment->id);
             }
             foreach ($nestedComments as $nestedComment) {
                 \App\Nestedcomment::destroy($nestedComment->id);

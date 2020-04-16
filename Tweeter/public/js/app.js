@@ -40142,7 +40142,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "col", attrs: { id: "make-comment" } }, [
+  return _c("div", { staticClass: "col s12", attrs: { id: "make-comment" } }, [
     _c(
       "button",
       {

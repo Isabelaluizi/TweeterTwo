@@ -1,5 +1,5 @@
 <template>
-<div id="make-comment" class="col">
+<div id="make-comment" class="col s12">
    <button @click="showTextarea()" class="waves-effect waves-teal btn-flat green-text text-dark"><i class="material-icons green-text text-lighten-1 left">mode_comment</i>Comment</button>
    <div class= "center-align" v-if="this.isClicked">
        <br>
