@@ -1,15 +1,5 @@
 @extends('layouts.app')
 
- {{-- @php
-    function checkLike ($tweetId, $checkLikes) {
-        foreach ($checkLikes as $checkLike) {
-            if ($checkLike->user_id==Auth::user()->id && $checkLike->tweet_id==$tweetId) {
-                return true;
-            }
-        }
-        return false;
-    }
-@endphp --}}
 
 @section ('content')
 
@@ -64,31 +54,13 @@
                             <button class="waves-effect waves-teal btn-flat green-text text-dark " type="submit" name="tweetId" value={{$tweetInfo['tweetId']}}><i class="material-icons green-text text-lighten-1 left">mode_comment</i>{{$tweetInfo['numComments']}}</button>
                             </form>
                         </div>
-                            {{-- @if(checkLike($tweetInfo['tweetId'],$checkLikes)) --}}
                             <div class="right-align">
-                                {{-- @csrf --}}
                                 <Like :tweet="{{json_encode($tweetInfo)}}"/>
-                            {{-- <button  class="waves-effect waves-teal btn-flat" type="submit" name="tweetId" value={{$tweetInfo['tweetId']}}><i class="material-icons pink-text text-lighten-3">favorite</i></button>
-                            <span class="pink-text text-lighten-3">{{$tweetInfo['numLikes']}}</span> --}}
+
                             </div>
                         </div>
                     </div>
                 </div>
-                            {{-- @else
-                            <div  class="right-align" action="/likeTweet" method="post">
-                            @csrf
-                            <button class="waves-effect waves-teal btn-flat" type="submit" name="tweetId" value={{$tweetInfo['tweetId']}}><i class="material-icons pink-text text-lighten-3">favorite_border</i></button>
-                            <span class="pink-text text-lighten-3">{{$tweetInfo['numLikes']}}</span>
-                            </div>
-                    </div>
-                </div>
-            </div> --}}
-                            {{-- @endif --}}
-
-
-
-
-
 @endforeach
             </div>
             {{ $tweets->links() }}

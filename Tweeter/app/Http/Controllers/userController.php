@@ -45,16 +45,9 @@ class userController extends Controller
             'name' => 'max:25|unique:App\User,name',
             'email' => 'max:255|unique:App\User,email',
         ]);
-        // $checkname=\App\User::where('name',$request->name)->get();
-        // $checkemail=\App\User::where('email',$request->email)->get();
-        // if($checkname->count()!=0) {
-        //      return view('showProfileEditFormError1');
-        //  } elseif ($checkemail->count()!=0) {
-        //      return view('showProfileEditFormError2');
-        //  } else {
             \App\User::where('id', Auth::user()->id)->update(['name' => $request->name, 'email' => $request->email, 'created_at'=>$request->created_at]);
             return redirect('userProfile');
-        //}
+
     }
     function confirmDeleteProfile(Request $request) {
         return view('confirmDeleteProfile');

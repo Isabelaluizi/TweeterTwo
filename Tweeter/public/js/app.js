@@ -2630,20 +2630,7 @@ __webpack_require__.r(__webpack_exports__);
         commentId: this.comment.commentId,
         commentContent: this.comment.comment
       }).then(function (response) {
-        _this.nestedComments = response.data.nestedCommentsInfo; //var i;
-        //for (i=0; i<response.data.nestedCommentsInfo.length; i++) {
-        //    this.nestedComments=
-        //     console.log(response.data.nestedCommentsInfo[i][0].content);
-        //     console.log(response.data.nestedCommentsInfo[i].name);
-        //}
-        //console.log(response.data.nestedComments[0].content);
-        //console.log(response.data.userNames[0].name);
-        //console.log(response.data.nestedComments[1].content);
-        //console.log(response.data.userNames[1].name);
-        //console.log(response.data.nestedComments[0].content);
-        //console.log(response.data.userNames[0].name);
-        //console.log(response.data.nestedComments[1].content);
-        //console.log(response.data.userNames[1].name);
+        _this.nestedComments = response.data.nestedCommentsInfo;
       })["catch"](function (error) {
         console.log("Error checking user");
       });
@@ -53284,10 +53271,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Nestedcomment_vue_vue_type_template_id_32881da6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Nestedcomment.vue?vue&type=template&id=32881da6&scoped=true& */ "./resources/js/components/Nestedcomment.vue?vue&type=template&id=32881da6&scoped=true&");
 /* harmony import */ var _Nestedcomment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nestedcomment.vue?vue&type=script&lang=js& */ "./resources/js/components/Nestedcomment.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-/* harmony import */ var _Nestedcomment_vue_vue_type_custom_index_0_blockType_i_class_material_icons_20green_text_20text_lighten_1_20left__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Nestedcomment.vue?vue&type=custom&index=0&blockType=i&class=material-icons%20green-text%20text-lighten-1%20left */ "./resources/js/components/Nestedcomment.vue?vue&type=custom&index=0&blockType=i&class=material-icons%20green-text%20text-lighten-1%20left");
-/* harmony import */ var _Nestedcomment_vue_vue_type_custom_index_0_blockType_i_class_material_icons_20green_text_20text_lighten_1_20left__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Nestedcomment_vue_vue_type_custom_index_0_blockType_i_class_material_icons_20green_text_20text_lighten_1_20left__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Nestedcomment_vue_vue_type_custom_index_1_blockType_button_class_waves_effect_20waves_teal_20btn_flat_20green_text_20text_dark__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Nestedcomment.vue?vue&type=custom&index=1&blockType=button&class=waves-effect%20waves-teal%20btn-flat%20green-text%20text-dark */ "./resources/js/components/Nestedcomment.vue?vue&type=custom&index=1&blockType=button&class=waves-effect%20waves-teal%20btn-flat%20green-text%20text-dark");
-/* harmony import */ var _Nestedcomment_vue_vue_type_custom_index_1_blockType_button_class_waves_effect_20waves_teal_20btn_flat_20green_text_20text_dark__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Nestedcomment_vue_vue_type_custom_index_1_blockType_button_class_waves_effect_20waves_teal_20btn_flat_20green_text_20text_dark__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -53306,38 +53289,10 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   
 )
 
-/* custom blocks */
-
-if (typeof _Nestedcomment_vue_vue_type_custom_index_0_blockType_i_class_material_icons_20green_text_20text_lighten_1_20left__WEBPACK_IMPORTED_MODULE_3___default.a === 'function') _Nestedcomment_vue_vue_type_custom_index_0_blockType_i_class_material_icons_20green_text_20text_lighten_1_20left__WEBPACK_IMPORTED_MODULE_3___default()(component)
-
-if (typeof _Nestedcomment_vue_vue_type_custom_index_1_blockType_button_class_waves_effect_20waves_teal_20btn_flat_20green_text_20text_dark__WEBPACK_IMPORTED_MODULE_4___default.a === 'function') _Nestedcomment_vue_vue_type_custom_index_1_blockType_button_class_waves_effect_20waves_teal_20btn_flat_20green_text_20text_dark__WEBPACK_IMPORTED_MODULE_4___default()(component)
-
 /* hot reload */
 if (false) { var api; }
 component.options.__file = "resources/js/components/Nestedcomment.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/Nestedcomment.vue?vue&type=custom&index=0&blockType=i&class=material-icons%20green-text%20text-lighten-1%20left":
-/*!*************************************************************************************************************************************************!*\
-  !*** ./resources/js/components/Nestedcomment.vue?vue&type=custom&index=0&blockType=i&class=material-icons%20green-text%20text-lighten-1%20left ***!
-  \*************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Nestedcomment.vue?vue&type=custom&index=1&blockType=button&class=waves-effect%20waves-teal%20btn-flat%20green-text%20text-dark":
-/*!****************************************************************************************************************************************************************!*\
-  !*** ./resources/js/components/Nestedcomment.vue?vue&type=custom&index=1&blockType=button&class=waves-effect%20waves-teal%20btn-flat%20green-text%20text-dark ***!
-  \****************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 

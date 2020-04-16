@@ -219,17 +219,4 @@ class feedController extends Controller
     }
 
 
-
-
-
-    // function deleteLike (Request $request) {
-    //     $likes=\App\Like::where('user_id',Auth::user()->id)->where('tweet_id',$request->tweetId)->get();
-    //     foreach($likes as $like) {
-    //         \App\Like::destroy($like
-    //         ->id);
-    //     }
-    //     return redirect ('readTweets');
-    // }
-
-
 }
