@@ -40,7 +40,7 @@ export default {
     },
     methods: {
         getGifAPI(data) {
-            axios.get("http://api.giphy.com/v1/gifs/search?&api_key=dHsen7CfIoQw9bI9evWox0GCkFRqCG52&q="+data)
+            axios.get("https://api.giphy.com/v1/gifs/search?&api_key=dHsen7CfIoQw9bI9evWox0GCkFRqCG52&q="+data)
                 .then(response=> {
                     this.url1 = response.data.data[0].images.original.url;
                     this.url2 = response.data.data[1].images.original.url;

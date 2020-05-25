@@ -2,15 +2,13 @@
 
 @section ('content')
 
-
     <div class="container">
-
         <div class="row">
             <div class="col s12">
                 <br>
             </div>
             <div class="col s5 m4 xl2 offset xl4 center-align">
-                <img src="{{url('/images/profilerobot.png')}}" id="avatar">
+                <img src="/images/profilerobot.png" id="avatar">
             </div>
             <div class="col s7 m6 xl5 offset-xl1 center-align valign-wrapper">
                 <h5> Welcome, {{Auth::user()->name}} </h5>
@@ -19,7 +17,6 @@
                 <h6 class="center-align"><i class="material-icons center">date_range</i><strong>Joined</strong> {{Auth::user()->created_at->format('Y-m-d')}}</h6>
             </div>
         </div>
-
         <div class="row">
             <div class="col s12 center-align">
                 <form action="/editProfile" method="post">
@@ -28,7 +25,6 @@
                 </form>
             </div>
         </div>
-
         <div class="row">
             <div class="col s1 m3 l2 xl3">
             </div>
@@ -46,7 +42,6 @@
             </div>
         </div>
         <br>
-
         <div class="divider"></div>
         <div class="row valign-wrapper">
             <div class="col l2 xl4">
@@ -58,56 +53,55 @@
                 <h5 class="left-align"><u>See your Tweets</u></h5>
             </div>
         </div>
-
-    @foreach ($tweetsInfo as $tweetInfo)
-    @php
-    $date=$tweetInfo['created_at'];
-    $date=substr($date,0,10);
-     @endphp
-    @if ($tweetInfo['userId']==Auth::user()->id)
-        <div class="row">
-            <div class="col s12 l12">
-                <div class="card grey lighten-3">
-                    <div class="row">
-                        <div class="col s12">
-                            <br>
-                        </div>
-                        <div class="col s1 m1 xl1">
-                        </div>
-                        <div class="col s5 m3 xl3">
-                            <img src="{{url('/images/profilerobot.png')}}" id="avatar">
-                        </div>
-                        <div class="col s6 m4 xl4">
-                            <h6 class="center-align"><strong>{{$tweetInfo['name']}}</strong></h6>
-                        </div>
-                        <div class="col s12 m4 xl4">
-                            <p class="center-align">{{$date}}</p>
-                        </div>
-                        <div class="col s10 offset-s1 center-align">
-                            <h6>{{$tweetInfo['content']}}</h6>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s2 l4">
-                        </div>
-                        <div class="col s4 l2 center-align">
-                            @include('partialconfirmDelete')
-                        </div>
-                        <div class="col s4 l2 center-align">
-                            @include('partialeditForm')
-                        </div>
-                        <div class="col s2 l4">
-                        </div>
-                        <div class="col s12">
-                            <br>
+        @foreach ($tweetsInfo as $tweetInfo)
+            @php
+                $date=$tweetInfo['created_at'];
+                $date=substr($date,0,10);
+            @endphp
+            @if ($tweetInfo['userId']==Auth::user()->id)
+                <div class="row">
+                    <div class="col s12 l12">
+                        <div class="card grey lighten-3">
+                            <div class="row">
+                                <div class="col s12">
+                                    <br>
+                                </div>
+                                <div class="col s1 m1 xl1">
+                                </div>
+                                <div class="col s5 m3 xl3">
+                                    <img src="/images/profilerobot.png" id="avatar">
+                                </div>
+                                <div class="col s6 m4 xl4">
+                                    <h6 class="center-align"><strong>{{$tweetInfo['name']}}</strong></h6>
+                                </div>
+                                <div class="col s12 m4 xl4">
+                                    <p class="center-align">{{$date}}</p>
+                                </div>
+                                <div class="col s10 offset-s1 center-align">
+                                    <h6>{{$tweetInfo['content']}}</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s2 l4">
+                                </div>
+                                <div class="col s4 l2 center-align">
+                                    @include('partialconfirmDelete')
+                                </div>
+                                <div class="col s4 l2 center-align">
+                                    @include('partialeditForm')
+                                </div>
+                                <div class="col s2 l4">
+                                </div>
+                                <div class="col s12">
+                                    <br>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    @endif
-    @endforeach
-    {{ $tweets->links() }}
+            @endif
+        @endforeach
+            {{ $tweets->links() }}
     </div>
 
 

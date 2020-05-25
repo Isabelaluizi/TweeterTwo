@@ -10,6 +10,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+$proxy_url    = getenv('PROXY_URL');
+$proxy_schema = getenv('PROXY_SCHEMA');
+
+if (!empty($proxy_url)) {
+   URL::forceRootUrl($proxy_url);
+}
+
+if (!empty($proxy_schema)) {
+   URL::forceScheme($proxy_schema);
+}
 
 Route::get('/', function () {
     return view('welcome');

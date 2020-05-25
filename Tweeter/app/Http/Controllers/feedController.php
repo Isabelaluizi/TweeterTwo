@@ -192,7 +192,7 @@ class feedController extends Controller
             $nestedComment->isGif = "false";
         }
         $nestedComment->save();
-        return response()->json("readTweets/$request->tweetId");
+        //return response()->json("readTweets/$request->tweetId");
     }
     function getNestedComment (Request $request) {
         if($request->commentContent == null) {

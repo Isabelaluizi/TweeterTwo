@@ -29,12 +29,8 @@ Vue.component('Root', require('./components/Root.vue').default);
 Vue.component('Like', require('./components/ButtonLike.vue').default);
 Vue.component('Giphy', require('./components/Giphy.vue').default);
 Vue.component('Comment', require('./components/Nestedcomment.vue').default);
-//Vue.component('InfiniteLoading',require('vue-infinite-loading'));
-//Vue.component('myExample', require('./components/New.vue').default);
 
-//import Root from './components/Root.vue'
-//import Like from './components/ButtonLike.vue'
-//import myExample from './components/New.vue'
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -44,8 +40,4 @@ Vue.component('Comment', require('./components/Nestedcomment.vue').default);
 
 const app = new Vue({
     el: '#app',
-    // components: {
-    //     Root,
-    //     Like
-    // }
 });

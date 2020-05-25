@@ -2213,7 +2213,7 @@ __webpack_require__.r(__webpack_exports__);
     getGifAPI: function getGifAPI(data) {
       var _this = this;
 
-      axios.get("http://api.giphy.com/v1/gifs/search?&api_key=dHsen7CfIoQw9bI9evWox0GCkFRqCG52&q=" + data).then(function (response) {
+      axios.get("https://api.giphy.com/v1/gifs/search?&api_key=dHsen7CfIoQw9bI9evWox0GCkFRqCG52&q=" + data).then(function (response) {
         _this.url1 = response.data.data[0].images.original.url;
         _this.url2 = response.data.data[1].images.original.url;
         _this.url3 = response.data.data[2].images.original.url;

@@ -8,7 +8,7 @@
                 <div class="col s12 center-align"><h5 class="green-text text-dark-4">{{ __('Register') }}</h5></div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="register">
                         @csrf
 
                         <div class="form-group row">

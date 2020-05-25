@@ -28,6 +28,6 @@ class HomeController extends Controller
         if(Auth::check()) {
             return redirect ('userProfile');
         }
-        return view('home');
+        return view('welcome');
     }
 }
